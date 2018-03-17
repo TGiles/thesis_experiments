@@ -1,0 +1,385 @@
+[ERROR] [1518650419.453479238]: In step range
+[ INFO] [1518650419.453504856]: Current Y iteration: 4
+[ INFO] [1518650419.453519818]: Current X iteration: -1
+[ INFO] [1518650419.453545747]: [Worker (7f1c37fff700)] Started with 50 jobs per thread.
+[ INFO] [1518650419.453601250]: [Worker (7f1c40699700)] Started with 50 jobs per thread.
+[ INFO] [1518650419.453631888]: [Worker (7f1c40e9a700)] Started with 50 jobs per thread.
+[ERROR] [1518650419.453665956]: Footstep sample theta: 0
+[ INFO] [1518650419.453695853]: [Worker (7f1c3fe98700)] Started with 50 jobs per thread.
+[ INFO] [1518650419.453718598]: Sample continuous (x, cell_size): -0.020000
+[ INFO] [1518650419.453734202]: Sample continuous (y, cell_size): 0.080000
+[ INFO] [1518650419.453755611]: Sample continuous (theta, angle_bin_size): 0.000000
+[ERROR] [1518650419.453823693]: Footstep sample theta: 1
+[ INFO] [1518650419.453839392]: Sample continuous (x, cell_size): -0.020000
+[ INFO] [1518650419.453850533]: Sample continuous (y, cell_size): 0.080000
+[ INFO] [1518650419.453878859]: Sample continuous (theta, angle_bin_size): 0.196350
+[ERROR] [1518650419.453935638]: Footstep sample theta: 2
+[ INFO] [1518650419.453950832]: Sample continuous (x, cell_size): -0.020000
+[ INFO] [1518650419.453961716]: Sample continuous (y, cell_size): 0.080000
+[ INFO] [1518650419.453981216]: Sample continuous (theta, angle_bin_size): 0.392699
+[ERROR] [1518650419.454036337]: Footstep sample theta: 3
+[ INFO] [1518650419.454058297]: Sample continuous (x, cell_size): -0.020000
+[ INFO] [1518650419.454074003]: Sample continuous (y, cell_size): 0.080000
+[ INFO] [1518650419.454095589]: Sample continuous (theta, angle_bin_size): 0.589049
+[ERROR] [1518650419.454111846]: In step range
+[ INFO] [1518650419.454127902]: Current Y iteration: 4
+[ INFO] [1518650419.454148086]: Current X iteration: 0
+[ERROR] [1518650419.454214599]: Footstep sample theta: 0
+[ INFO] [1518650419.454232871]: Sample continuous (x, cell_size): 0.000000
+[ INFO] [1518650419.454250745]: Sample continuous (y, cell_size): 0.080000
+[ INFO] [1518650419.454278241]: Sample continuous (theta, angle_bin_size): 0.000000
+[ERROR] [1518650419.454326646]: Footstep sample theta: 1
+[ INFO] [1518650419.454346217]: Sample continuous (x, cell_size): 0.000000
+[ INFO] [1518650419.454362590]: Sample continuous (y, cell_size): 0.080000
+[ INFO] [1518650419.454378632]: Sample continuous (theta, angle_bin_size): 0.196350
+[ERROR] [1518650419.454418026]: Footstep sample theta: 2
+[ INFO] [1518650419.454431346]: Sample continuous (x, cell_size): 0.000000
+[ INFO] [1518650419.454444344]: Sample continuous (y, cell_size): 0.080000
+[ INFO] [1518650419.454458961]: Sample continuous (theta, angle_bin_size): 0.392699
+[ERROR] [1518650419.454496549]: Footstep sample theta: 3
+[ INFO] [1518650419.454509727]: Sample continuous (x, cell_size): 0.000000
+[ INFO] [1518650419.454527018]: Sample continuous (y, cell_size): 0.080000
+[ INFO] [1518650419.454540843]: Sample continuous (theta, angle_bin_size): 0.589049
+[ERROR] [1518650419.454555183]: In step range
+[ INFO] [1518650419.454572294]: Current Y iteration: 4
+[ INFO] [1518650419.454585163]: Current X iteration: 1
+[ERROR] [1518650419.454651207]: Footstep sample theta: 0
+[ INFO] [1518650419.454666190]: Sample continuous (x, cell_size): 0.020000
+[ INFO] [1518650419.454681691]: Sample continuous (y, cell_size): 0.080000
+[ INFO] [1518650419.454694465]: Sample continuous (theta, angle_bin_size): 0.000000
+[ERROR] [1518650419.454733106]: Footstep sample theta: 1
+[ INFO] [1518650419.454746512]: Sample continuous (x, cell_size): 0.020000
+[ INFO] [1518650419.454762380]: Sample continuous (y, cell_size): 0.080000
+[ INFO] [1518650419.454778706]: Sample continuous (theta, angle_bin_size): 0.196350
+[ERROR] [1518650419.454817090]: Footstep sample theta: 2
+[ INFO] [1518650419.454830604]: Sample continuous (x, cell_size): 0.020000
+[ INFO] [1518650419.454845542]: Sample continuous (y, cell_size): 0.080000
+[ INFO] [1518650419.454859946]: Sample continuous (theta, angle_bin_size): 0.392699
+[ERROR] [1518650419.454896450]: Footstep sample theta: 3
+[ INFO] [1518650419.454909906]: Sample continuous (x, cell_size): 0.020000
+[ INFO] [1518650419.454925664]: Sample continuous (y, cell_size): 0.080000
+[ INFO] [1518650419.454938933]: Sample continuous (theta, angle_bin_size): 0.589049
+[ERROR] [1518650419.454952661]: In step range
+[ INFO] [1518650419.454967254]: Current Y iteration: 4
+[ INFO] [1518650419.454981274]: Current X iteration: 2
+[ERROR] [1518650419.455018028]: Footstep sample theta: 0
+[ INFO] [1518650419.455031546]: Sample continuous (x, cell_size): 0.040000
+[ INFO] [1518650419.455047844]: Sample continuous (y, cell_size): 0.080000
+[ INFO] [1518650419.455062024]: Sample continuous (theta, angle_bin_size): 0.000000
+[ERROR] [1518650419.455100039]: Footstep sample theta: 1
+[ INFO] [1518650419.455113474]: Sample continuous (x, cell_size): 0.040000
+[ INFO] [1518650419.455128068]: Sample continuous (y, cell_size): 0.080000
+[ INFO] [1518650419.455140860]: Sample continuous (theta, angle_bin_size): 0.196350
+[ERROR] [1518650419.455179480]: Footstep sample theta: 2
+[ INFO] [1518650419.455192725]: Sample continuous (x, cell_size): 0.040000
+[ INFO] [1518650419.455207249]: Sample continuous (y, cell_size): 0.080000
+[ INFO] [1518650419.455232431]: Sample continuous (theta, angle_bin_size): 0.392699
+[ERROR] [1518650419.455275533]: Footstep sample theta: 3
+[ INFO] [1518650419.455290874]: Sample continuous (x, cell_size): 0.040000
+[ INFO] [1518650419.455308717]: Sample continuous (y, cell_size): 0.080000
+[ INFO] [1518650419.455323111]: Sample continuous (theta, angle_bin_size): 0.589049
+[ERROR] [1518650419.455338062]: In step range
+[ INFO] [1518650419.455350791]: Current Y iteration: 4
+[ INFO] [1518650419.455366491]: Current X iteration: 3
+[ERROR] [1518650419.455457886]: Footstep sample theta: 0
+[ INFO] [1518650419.455474077]: Sample continuous (x, cell_size): 0.060000
+[ INFO] [1518650419.455490114]: Sample continuous (y, cell_size): 0.080000
+[ INFO] [1518650419.455502318]: Sample continuous (theta, angle_bin_size): 0.000000
+[ERROR] [1518650419.455543008]: Footstep sample theta: 1
+[ INFO] [1518650419.455559050]: Sample continuous (x, cell_size): 0.060000
+[ INFO] [1518650419.455574271]: Sample continuous (y, cell_size): 0.080000
+[ INFO] [1518650419.455588631]: Sample continuous (theta, angle_bin_size): 0.196350
+[ERROR] [1518650419.455627354]: Footstep sample theta: 2
+[ INFO] [1518650419.455641844]: Sample continuous (x, cell_size): 0.060000
+[ INFO] [1518650419.455655719]: Sample continuous (y, cell_size): 0.080000
+[ INFO] [1518650419.455671059]: Sample continuous (theta, angle_bin_size): 0.392699
+[ERROR] [1518650419.455704222]: Footstep sample theta: 3
+[ INFO] [1518650419.455724227]: Sample continuous (x, cell_size): 0.060000
+[ INFO] [1518650419.455737419]: Sample continuous (y, cell_size): 0.080000
+[ INFO] [1518650419.455748066]: Sample continuous (theta, angle_bin_size): 0.589049
+[ERROR] [1518650419.455759198]: In step range
+[ INFO] [1518650419.455769113]: Current Y iteration: 5
+[ INFO] [1518650419.455782042]: Current X iteration: -1
+[ERROR] [1518650419.455832036]: Footstep sample theta: 0
+[ INFO] [1518650419.455850682]: Sample continuous (x, cell_size): -0.020000
+[ INFO] [1518650419.455881165]: Sample continuous (y, cell_size): 0.100000
+[ INFO] [1518650419.455900940]: Sample continuous (theta, angle_bin_size): 0.000000
+[ERROR] [1518650419.455940275]: Footstep sample theta: 1
+[ INFO] [1518650419.455954823]: Sample continuous (x, cell_size): -0.020000
+[ INFO] [1518650419.455968732]: Sample continuous (y, cell_size): 0.100000
+[ INFO] [1518650419.455982967]: Sample continuous (theta, angle_bin_size): 0.196350
+[ERROR] [1518650419.456021583]: Footstep sample theta: 2
+[ INFO] [1518650419.456035547]: Sample continuous (x, cell_size): -0.020000
+[ INFO] [1518650419.456050036]: Sample continuous (y, cell_size): 0.100000
+[ INFO] [1518650419.456076111]: Sample continuous (theta, angle_bin_size): 0.392699
+[ERROR] [1518650419.456115116]: Footstep sample theta: 3
+[ INFO] [1518650419.456129287]: Sample continuous (x, cell_size): -0.020000
+[ INFO] [1518650419.456151675]: Sample continuous (y, cell_size): 0.100000
+[ INFO] [1518650419.456168402]: Sample continuous (theta, angle_bin_size): 0.589049
+[ERROR] [1518650419.456183209]: In step range
+[ INFO] [1518650419.456197386]: Current Y iteration: 5
+[ INFO] [1518650419.456212565]: Current X iteration: 0
+[ERROR] [1518650419.456250294]: Footstep sample theta: 0
+[ INFO] [1518650419.456265451]: Sample continuous (x, cell_size): 0.000000
+[ INFO] [1518650419.456279787]: Sample continuous (y, cell_size): 0.100000
+[ INFO] [1518650419.456293996]: Sample continuous (theta, angle_bin_size): 0.000000
+[ERROR] [1518650419.456332951]: Footstep sample theta: 1
+[ INFO] [1518650419.456346990]: Sample continuous (x, cell_size): 0.000000
+[ INFO] [1518650419.456361169]: Sample continuous (y, cell_size): 0.100000
+[ INFO] [1518650419.456375238]: Sample continuous (theta, angle_bin_size): 0.196350
+[ERROR] [1518650419.456411819]: Footstep sample theta: 2
+[ INFO] [1518650419.456428131]: Sample continuous (x, cell_size): 0.000000
+[ INFO] [1518650419.456438026]: Sample continuous (y, cell_size): 0.100000
+[ INFO] [1518650419.456450185]: Sample continuous (theta, angle_bin_size): 0.392699
+[ERROR] [1518650419.456484103]: Footstep sample theta: 3
+[ INFO] [1518650419.456498841]: Sample continuous (x, cell_size): 0.000000
+[ INFO] [1518650419.456510477]: Sample continuous (y, cell_size): 0.100000
+[ INFO] [1518650419.456522308]: Sample continuous (theta, angle_bin_size): 0.589049
+[ERROR] [1518650419.456533201]: In step range
+[ INFO] [1518650419.456551436]: Current Y iteration: 5
+[ INFO] [1518650419.456573623]: Current X iteration: 1
+[ERROR] [1518650419.456612328]: Footstep sample theta: 0
+[ INFO] [1518650419.456624614]: Sample continuous (x, cell_size): 0.020000
+[ INFO] [1518650419.456638613]: Sample continuous (y, cell_size): 0.100000
+[ INFO] [1518650419.456659616]: Sample continuous (theta, angle_bin_size): 0.000000
+[ERROR] [1518650419.456707313]: Footstep sample theta: 1
+[ INFO] [1518650419.456722325]: Sample continuous (x, cell_size): 0.020000
+[ INFO] [1518650419.456734441]: Sample continuous (y, cell_size): 0.100000
+[ INFO] [1518650419.456745423]: Sample continuous (theta, angle_bin_size): 0.196350
+[ERROR] [1518650419.456785853]: Footstep sample theta: 2
+[ INFO] [1518650419.456805639]: Sample continuous (x, cell_size): 0.020000
+[ INFO] [1518650419.456817940]: Sample continuous (y, cell_size): 0.100000
+[ INFO] [1518650419.456828992]: Sample continuous (theta, angle_bin_size): 0.392699
+[ERROR] [1518650419.456866289]: Footstep sample theta: 3
+[ INFO] [1518650419.456882923]: Sample continuous (x, cell_size): 0.020000
+[ INFO] [1518650419.456894921]: Sample continuous (y, cell_size): 0.100000
+[ INFO] [1518650419.456907315]: Sample continuous (theta, angle_bin_size): 0.589049
+[ERROR] [1518650419.456918541]: In step range
+[ INFO] [1518650419.456930596]: Current Y iteration: 5
+[ INFO] [1518650419.456966099]: Current X iteration: 2
+[ERROR] [1518650419.457138924]: Footstep sample theta: 0
+[ INFO] [1518650419.457154982]: Sample continuous (x, cell_size): 0.040000
+[ INFO] [1518650419.457166266]: Sample continuous (y, cell_size): 0.100000
+[ INFO] [1518650419.457192534]: Sample continuous (theta, angle_bin_size): 0.000000
+[ERROR] [1518650419.457228443]: Footstep sample theta: 1
+[ INFO] [1518650419.457244241]: Sample continuous (x, cell_size): 0.040000
+[ INFO] [1518650419.457256447]: Sample continuous (y, cell_size): 0.100000
+[ INFO] [1518650419.457276611]: Sample continuous (theta, angle_bin_size): 0.196350
+[ERROR] [1518650419.457314584]: Footstep sample theta: 2
+[ INFO] [1518650419.457327959]: Sample continuous (x, cell_size): 0.040000
+[ INFO] [1518650419.457351062]: Sample continuous (y, cell_size): 0.100000
+[ INFO] [1518650419.457364470]: Sample continuous (theta, angle_bin_size): 0.392699
+[ERROR] [1518650419.457400366]: Footstep sample theta: 3
+[ INFO] [1518650419.457432321]: Sample continuous (x, cell_size): 0.040000
+[ INFO] [1518650419.457444814]: Sample continuous (y, cell_size): 0.100000
+[ INFO] [1518650419.457465368]: Sample continuous (theta, angle_bin_size): 0.589049
+[ERROR] [1518650419.457483533]: In step range
+[ INFO] [1518650419.457494056]: Current Y iteration: 5
+[ INFO] [1518650419.457504519]: Current X iteration: 3
+[ERROR] [1518650419.457538318]: Footstep sample theta: 0
+[ INFO] [1518650419.457550540]: Sample continuous (x, cell_size): 0.060000
+[ INFO] [1518650419.457561206]: Sample continuous (y, cell_size): 0.100000
+[ INFO] [1518650419.457571227]: Sample continuous (theta, angle_bin_size): 0.000000
+[ERROR] [1518650419.457605768]: Footstep sample theta: 1
+[ INFO] [1518650419.457621590]: Sample continuous (x, cell_size): 0.060000
+[ INFO] [1518650419.457633548]: Sample continuous (y, cell_size): 0.100000
+[ INFO] [1518650419.457645434]: Sample continuous (theta, angle_bin_size): 0.196350
+[ERROR] [1518650419.457682120]: Footstep sample theta: 2
+[ INFO] [1518650419.457694543]: Sample continuous (x, cell_size): 0.060000
+[ INFO] [1518650419.457705391]: Sample continuous (y, cell_size): 0.100000
+[ INFO] [1518650419.457726573]: Sample continuous (theta, angle_bin_size): 0.392699
+[ERROR] [1518650419.457775632]: Footstep sample theta: 3
+[ INFO] [1518650419.457790355]: Sample continuous (x, cell_size): 0.060000
+[ INFO] [1518650419.457802259]: Sample continuous (y, cell_size): 0.100000
+[ INFO] [1518650419.457813213]: Sample continuous (theta, angle_bin_size): 0.589049
+[ERROR] [1518650419.457824415]: In step range
+[ INFO] [1518650419.457834645]: Current Y iteration: 6
+[ INFO] [1518650419.457845477]: Current X iteration: -1
+[ERROR] [1518650419.457884821]: Footstep sample theta: 0
+[ INFO] [1518650419.457904210]: Sample continuous (x, cell_size): -0.020000
+[ INFO] [1518650419.457927159]: Sample continuous (y, cell_size): 0.120000
+[ INFO] [1518650419.457944760]: Sample continuous (theta, angle_bin_size): 0.000000
+[ERROR] [1518650419.457986204]: Footstep sample theta: 1
+[ INFO] [1518650419.457998556]: Sample continuous (x, cell_size): -0.020000
+[ INFO] [1518650419.458010034]: Sample continuous (y, cell_size): 0.120000
+[ INFO] [1518650419.458020426]: Sample continuous (theta, angle_bin_size): 0.196350
+[ERROR] [1518650419.458058594]: Footstep sample theta: 2
+[ INFO] [1518650419.458086793]: Sample continuous (x, cell_size): -0.020000
+[ INFO] [1518650419.458101366]: Sample continuous (y, cell_size): 0.120000
+[ INFO] [1518650419.458112784]: Sample continuous (theta, angle_bin_size): 0.392699
+[ERROR] [1518650419.458146706]: Footstep sample theta: 3
+[ INFO] [1518650419.458159021]: Sample continuous (x, cell_size): -0.020000
+[ INFO] [1518650419.458180473]: Sample continuous (y, cell_size): 0.120000
+[ INFO] [1518650419.458200829]: Sample continuous (theta, angle_bin_size): 0.589049
+[ERROR] [1518650419.458225020]: In step range
+[ INFO] [1518650419.458262751]: Current Y iteration: 6
+[ INFO] [1518650419.458276022]: Current X iteration: 0
+[ERROR] [1518650419.458311938]: Footstep sample theta: 0
+[ INFO] [1518650419.458335594]: Sample continuous (x, cell_size): 0.000000
+[ INFO] [1518650419.458354986]: Sample continuous (y, cell_size): 0.120000
+[ INFO] [1518650419.458376384]: Sample continuous (theta, angle_bin_size): 0.000000
+[ERROR] [1518650419.458429537]: Footstep sample theta: 1
+[ INFO] [1518650419.458444455]: Sample continuous (x, cell_size): 0.000000
+[ INFO] [1518650419.458456316]: Sample continuous (y, cell_size): 0.120000
+[ INFO] [1518650419.458468876]: Sample continuous (theta, angle_bin_size): 0.196350
+[ERROR] [1518650419.458502827]: Footstep sample theta: 2
+[ INFO] [1518650419.458514713]: Sample continuous (x, cell_size): 0.000000
+[ INFO] [1518650419.458538034]: Sample continuous (y, cell_size): 0.120000
+[ INFO] [1518650419.458560357]: Sample continuous (theta, angle_bin_size): 0.392699
+[ERROR] [1518650419.458604044]: Footstep sample theta: 3
+[ INFO] [1518650419.458616821]: Sample continuous (x, cell_size): 0.000000
+[ INFO] [1518650419.458628043]: Sample continuous (y, cell_size): 0.120000
+[ INFO] [1518650419.458639825]: Sample continuous (theta, angle_bin_size): 0.589049
+[ERROR] [1518650419.458660938]: In step range
+[ INFO] [1518650419.458680384]: Current Y iteration: 6
+[ INFO] [1518650419.458700759]: Current X iteration: 1
+[ERROR] [1518650419.458740413]: Footstep sample theta: 0
+[ INFO] [1518650419.458753210]: Sample continuous (x, cell_size): 0.020000
+[ INFO] [1518650419.458765380]: Sample continuous (y, cell_size): 0.120000
+[ INFO] [1518650419.458776590]: Sample continuous (theta, angle_bin_size): 0.000000
+[ERROR] [1518650419.458823899]: Footstep sample theta: 1
+[ INFO] [1518650419.458842188]: Sample continuous (x, cell_size): 0.020000
+[ INFO] [1518650419.458854445]: Sample continuous (y, cell_size): 0.120000
+[ INFO] [1518650419.458865694]: Sample continuous (theta, angle_bin_size): 0.196350
+[ERROR] [1518650419.458899506]: Footstep sample theta: 2
+[ INFO] [1518650419.458922833]: Sample continuous (x, cell_size): 0.020000
+[ INFO] [1518650419.458947451]: Sample continuous (y, cell_size): 0.120000
+[ INFO] [1518650419.458960180]: Sample continuous (theta, angle_bin_size): 0.392699
+[ERROR] [1518650419.458994176]: Footstep sample theta: 3
+[ INFO] [1518650419.459016363]: Sample continuous (x, cell_size): 0.020000
+[ INFO] [1518650419.459036297]: Sample continuous (y, cell_size): 0.120000
+[ INFO] [1518650419.459052139]: Sample continuous (theta, angle_bin_size): 0.589049
+[ERROR] [1518650419.459064334]: In step range
+[ INFO] [1518650419.459074766]: Current Y iteration: 6
+[ INFO] [1518650419.459085429]: Current X iteration: 2
+[ERROR] [1518650419.459122972]: Footstep sample theta: 0
+[ INFO] [1518650419.459140773]: Sample continuous (x, cell_size): 0.040000
+[ INFO] [1518650419.459152256]: Sample continuous (y, cell_size): 0.120000
+[ INFO] [1518650419.459164038]: Sample continuous (theta, angle_bin_size): 0.000000
+[ERROR] [1518650419.459198764]: Footstep sample theta: 1
+[ INFO] [1518650419.459254603]: Sample continuous (x, cell_size): 0.040000
+[ INFO] [1518650419.459276505]: Sample continuous (y, cell_size): 0.120000
+[ INFO] [1518650419.459289149]: Sample continuous (theta, angle_bin_size): 0.196350
+[ERROR] [1518650419.459324822]: Footstep sample theta: 2
+[ INFO] [1518650419.459351709]: Sample continuous (x, cell_size): 0.040000
+[ INFO] [1518650419.459372512]: Sample continuous (y, cell_size): 0.120000
+[ INFO] [1518650419.459386496]: Sample continuous (theta, angle_bin_size): 0.392699
+[ERROR] [1518650419.459432023]: Footstep sample theta: 3
+[ INFO] [1518650419.459443825]: Sample continuous (x, cell_size): 0.040000
+[ INFO] [1518650419.459455263]: Sample continuous (y, cell_size): 0.120000
+[ INFO] [1518650419.459481353]: Sample continuous (theta, angle_bin_size): 0.589049
+[ERROR] [1518650419.459495382]: In step range
+[ INFO] [1518650419.459506096]: Current Y iteration: 6
+[ INFO] [1518650419.459516710]: Current X iteration: 3
+[ERROR] [1518650419.459563413]: Footstep sample theta: 0
+[ INFO] [1518650419.459576581]: Sample continuous (x, cell_size): 0.060000
+[ INFO] [1518650419.459587974]: Sample continuous (y, cell_size): 0.120000
+[ INFO] [1518650419.459608999]: Sample continuous (theta, angle_bin_size): 0.000000
+[ERROR] [1518650419.459651091]: Footstep sample theta: 1
+[ INFO] [1518650419.459664702]: Sample continuous (x, cell_size): 0.060000
+[ INFO] [1518650419.459684100]: Sample continuous (y, cell_size): 0.120000
+[ INFO] [1518650419.459695624]: Sample continuous (theta, angle_bin_size): 0.196350
+[ERROR] [1518650419.459732341]: Footstep sample theta: 2
+[ INFO] [1518650419.459745356]: Sample continuous (x, cell_size): 0.060000
+[ INFO] [1518650419.459760812]: Sample continuous (y, cell_size): 0.120000
+[ INFO] [1518650419.459773353]: Sample continuous (theta, angle_bin_size): 0.392699
+[ERROR] [1518650419.459807702]: Footstep sample theta: 3
+[ INFO] [1518650419.459820913]: Sample continuous (x, cell_size): 0.060000
+[ INFO] [1518650419.459835724]: Sample continuous (y, cell_size): 0.120000
+[ INFO] [1518650419.459850103]: Sample continuous (theta, angle_bin_size): 0.589049
+[ERROR] [1518650419.459862235]: In step range
+[ INFO] [1518650419.459876452]: Current Y iteration: 7
+[ INFO] [1518650419.459887630]: Current X iteration: -1
+[ERROR] [1518650419.459925825]: Footstep sample theta: 0
+[ INFO] [1518650419.459939055]: Sample continuous (x, cell_size): -0.020000
+[ INFO] [1518650419.459958471]: Sample continuous (y, cell_size): 0.140000
+[ INFO] [1518650419.459975816]: Sample continuous (theta, angle_bin_size): 0.000000
+[ERROR] [1518650419.460014557]: Footstep sample theta: 1
+[ INFO] [1518650419.460027890]: Sample continuous (x, cell_size): -0.020000
+[ INFO] [1518650419.460039070]: Sample continuous (y, cell_size): 0.140000
+[ INFO] [1518650419.460054761]: Sample continuous (theta, angle_bin_size): 0.196350
+[ERROR] [1518650419.460088760]: Footstep sample theta: 2
+[ INFO] [1518650419.460102064]: Sample continuous (x, cell_size): -0.020000
+[ INFO] [1518650419.460113733]: Sample continuous (y, cell_size): 0.140000
+[ INFO] [1518650419.460129036]: Sample continuous (theta, angle_bin_size): 0.392699
+[ERROR] [1518650419.460162934]: Footstep sample theta: 3
+[ INFO] [1518650419.460176324]: Sample continuous (x, cell_size): -0.020000
+[ INFO] [1518650419.460187786]: Sample continuous (y, cell_size): 0.140000
+[ INFO] [1518650419.460214778]: Sample continuous (theta, angle_bin_size): 0.589049
+[ERROR] [1518650419.460226858]: In step range
+[ INFO] [1518650419.460242070]: Current Y iteration: 7
+[ INFO] [1518650419.460252280]: Current X iteration: 0
+[ERROR] [1518650419.460503379]: Footstep sample theta: 0
+[ INFO] [1518650419.460517990]: Sample continuous (x, cell_size): 0.000000
+[ INFO] [1518650419.460529077]: Sample continuous (y, cell_size): 0.140000
+[ INFO] [1518650419.460551710]: Sample continuous (theta, angle_bin_size): 0.000000
+[ERROR] [1518650419.460590874]: Footstep sample theta: 1
+[ INFO] [1518650419.460604796]: Sample continuous (x, cell_size): 0.000000
+[ INFO] [1518650419.460622287]: Sample continuous (y, cell_size): 0.140000
+[ INFO] [1518650419.460638896]: Sample continuous (theta, angle_bin_size): 0.196350
+[ERROR] [1518650419.460678749]: Footstep sample theta: 2
+[ INFO] [1518650419.460692236]: Sample continuous (x, cell_size): 0.000000
+[ INFO] [1518650419.460710266]: Sample continuous (y, cell_size): 0.140000
+[ INFO] [1518650419.460726392]: Sample continuous (theta, angle_bin_size): 0.392699
+[ERROR] [1518650419.460767056]: Footstep sample theta: 3
+[ INFO] [1518650419.460780355]: Sample continuous (x, cell_size): 0.000000
+[ INFO] [1518650419.460795003]: Sample continuous (y, cell_size): 0.140000
+[ INFO] [1518650419.460807643]: Sample continuous (theta, angle_bin_size): 0.589049
+[ERROR] [1518650419.460818660]: In step range
+[ INFO] [1518650419.460834657]: Current Y iteration: 7
+[ INFO] [1518650419.460850455]: Current X iteration: 1
+[ERROR] [1518650419.460889481]: Footstep sample theta: 0
+[ INFO] [1518650419.460904291]: Sample continuous (x, cell_size): 0.020000
+[ INFO] [1518650419.460921088]: Sample continuous (y, cell_size): 0.140000
+[ INFO] [1518650419.460937540]: Sample continuous (theta, angle_bin_size): 0.000000
+[ERROR] [1518650419.460977732]: Footstep sample theta: 1
+[ INFO] [1518650419.460991507]: Sample continuous (x, cell_size): 0.020000
+[ INFO] [1518650419.461010231]: Sample continuous (y, cell_size): 0.140000
+[ INFO] [1518650419.461025945]: Sample continuous (theta, angle_bin_size): 0.196350
+[ERROR] [1518650419.461066713]: Footstep sample theta: 2
+[ INFO] [1518650419.461079923]: Sample continuous (x, cell_size): 0.020000
+[ INFO] [1518650419.461097608]: Sample continuous (y, cell_size): 0.140000
+[ INFO] [1518650419.461113107]: Sample continuous (theta, angle_bin_size): 0.392699
+[ERROR] [1518650419.461146227]: Footstep sample theta: 3
+[ INFO] [1518650419.461159568]: Sample continuous (x, cell_size): 0.020000
+[ INFO] [1518650419.461172336]: Sample continuous (y, cell_size): 0.140000
+[ INFO] [1518650419.461186783]: Sample continuous (theta, angle_bin_size): 0.589049
+[ERROR] [1518650419.461197997]: In step range
+[ INFO] [1518650419.461209716]: Current Y iteration: 7
+[ INFO] [1518650419.461223828]: Current X iteration: 2
+[ERROR] [1518650419.461258888]: Footstep sample theta: 0
+[ INFO] [1518650419.461272234]: Sample continuous (x, cell_size): 0.040000
+[ INFO] [1518650419.461283129]: Sample continuous (y, cell_size): 0.140000
+[ INFO] [1518650419.461304655]: Sample continuous (theta, angle_bin_size): 0.000000
+[ERROR] [1518650419.461343746]: Footstep sample theta: 1
+[ INFO] [1518650419.461357803]: Sample continuous (x, cell_size): 0.040000
+[ INFO] [1518650419.461369156]: Sample continuous (y, cell_size): 0.140000
+[ INFO] [1518650419.461383378]: Sample continuous (theta, angle_bin_size): 0.196350
+[ERROR] [1518650419.461417481]: Footstep sample theta: 2
+[ INFO] [1518650419.461430735]: Sample continuous (x, cell_size): 0.040000
+[ INFO] [1518650419.461442636]: Sample continuous (y, cell_size): 0.140000
+[ INFO] [1518650419.461458681]: Sample continuous (theta, angle_bin_size): 0.392699
+[ERROR] [1518650419.461493005]: Footstep sample theta: 3
+[ INFO] [1518650419.461506230]: Sample continuous (x, cell_size): 0.040000
+[ INFO] [1518650419.461519561]: Sample continuous (y, cell_size): 0.140000
+[ INFO] [1518650419.461533098]: Sample continuous (theta, angle_bin_size): 0.589049
+[ERROR] [1518650419.461544711]: In step range
+[ INFO] [1518650419.461562303]: Current Y iteration: 7
+[ INFO] [1518650419.461572614]: Current X iteration: 3
+[ERROR] [1518650419.461617509]: Footstep sample theta: 0
+[ INFO] [1518650419.461631171]: Sample continuous (x, cell_size): 0.060000
+[ INFO] [1518650419.461642379]: Sample continuous (y, cell_size): 0.140000
+[ INFO] [1518650419.461656994]: Sample continuous (theta, angle_bin_size): 0.000000
+[ERROR] [1518650419.461695681]: Footstep sample theta: 1
+[ INFO] [1518650419.461709191]: Sample continuous (x, cell_size): 0.060000
+[ INFO] [1518650419.461720632]: Sample continuous (y, cell_size): 0.140000
+[ INFO] [1518650419.461737340]: Sample continuous (theta, angle_bin_size): 0.196350
+[ERROR] [1518650419.461774925]: Footstep sample theta: 2
+[ INFO] [1518650419.461788323]: Sample continuous (x, cell_size): 0.060000
+[ INFO] [1518650419.461800886]: Sample continuous (y, cell_size): 0.140000
+[ INFO] [1518650419.461817461]: Sample continuous (theta, angle_bin_size): 0.392699
+[ERROR] [1518650419.461851816]: Footstep sample theta: 3
+[ INFO] [1518650419.461865357]: Sample continuous (x, cell_size): 0.060000
+[ INFO] [1518650419.461876423]: Sample continuous (y, cell_size): 0.140000
+[ INFO] [1518650419.461896119]: Sample continuous (theta, angle_bin_size): 0.589049
+

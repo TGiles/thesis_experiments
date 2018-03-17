@@ -1,0 +1,640 @@
+... logging to /home/tgiles/.ros/log/5dcb1ec0-11c5-11e8-bc93-484d7eec12b3/roslaunch-weida-Precision-Tower-5810-9970.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/tgiles/Desktop/install_test/vigir_footstep_install/src/vigir_footstep_planning_core/vigir_footstep_planner/launch/footstep_planner_test_nao.launch
+[1mstarted roslaunch server http://localhost:41845/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.12
+ * /vigir/footstep_planning/boundary_step_cost_estimator/base_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/boundary_step_cost_estimator/base_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/boundary_step_cost_estimator/type_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/boundary_step_cost_estimator/type_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/collision_check_grid_map_plugin/base_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/collision_check_grid_map_plugin/base_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/collision_check_grid_map_plugin/type_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/collision_check_grid_map_plugin/type_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/const_step_cost_estimator/base_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/const_step_cost_estimator/base_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/const_step_cost_estimator/type_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/const_step_cost_estimator/type_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/default_params: Nao
+ * /vigir/footstep_planning/dynamics_heuristic/base_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/dynamics_heuristic/base_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/dynamics_heuristic/type_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/dynamics_heuristic/type_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/dynamics_reachability/base_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/dynamics_reachability/base_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/dynamics_reachability/type_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/dynamics_reachability/type_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/dynamics_step_cost_estimator/base_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/dynamics_step_cost_estimator/base_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/dynamics_step_cost_estimator/type_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/dynamics_step_cost_estimator/type_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/euclidean_heuristic/base_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/euclidean_heuristic/base_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/euclidean_heuristic/type_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/euclidean_heuristic/type_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/euclidean_step_cost_estimator/base_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/euclidean_step_cost_estimator/base_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/euclidean_step_cost_estimator/type_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/euclidean_step_cost_estimator/type_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/foot/left/foot_frame/pitch: 0.0
+ * /vigir/footstep_planning/foot/left/foot_frame/roll: 0.0
+ * /vigir/footstep_planning/foot/left/foot_frame/x: 0.02
+ * /vigir/footstep_planning/foot/left/foot_frame/y: 0.0
+ * /vigir/footstep_planning/foot/left/foot_frame/yaw: 0.0
+ * /vigir/footstep_planning/foot/left/foot_frame/z: 0.0
+ * /vigir/footstep_planning/foot/left/frame_id: /l_sole
+ * /vigir/footstep_planning/foot/right/foot_frame/pitch: 0.0
+ * /vigir/footstep_planning/foot/right/foot_frame/roll: 0.0
+ * /vigir/footstep_planning/foot/right/foot_frame/x: 0.02
+ * /vigir/footstep_planning/foot/right/foot_frame/y: 0.0
+ * /vigir/footstep_planning/foot/right/foot_frame/yaw: 0.0
+ * /vigir/footstep_planning/foot/right/foot_frame/z: 0.0
+ * /vigir/footstep_planning/foot/right/frame_id: /r_sole
+ * /vigir/footstep_planning/foot/separation: 0.1
+ * /vigir/footstep_planning/foot/size/x: 0.15
+ * /vigir/footstep_planning/foot/size/y: 0.081
+ * /vigir/footstep_planning/foot/size/z: 0.03
+ * /vigir/footstep_planning/foot_grid_map_model/base_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/foot_grid_map_model/base_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/foot_grid_map_model/type_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/foot_grid_map_model/type_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/ground_contact_step_cost_estimator/base_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/ground_contact_step_cost_estimator/base_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/ground_contact_step_cost_estimator/type_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/ground_contact_step_cost_estimator/type_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/hot_map_heuristic/base_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/hot_map_heuristic/base_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/hot_map_heuristic/type_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/hot_map_heuristic/type_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/map_server_1/frame_id: /world
+ * /vigir/footstep_planning/map_server_2/frame_id: /world
+ * /vigir/footstep_planning/map_step_cost_estimator/base_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/map_step_cost_estimator/base_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/map_step_cost_estimator/type_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/map_step_cost_estimator/type_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/occupancy_grid_map_heuristic/base_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/occupancy_grid_map_heuristic/base_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/occupancy_grid_map_heuristic/type_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/occupancy_grid_map_heuristic/type_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/params_path: /home/tgiles/Desk...
+ * /vigir/footstep_planning/path_cost_heuristic/base_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/path_cost_heuristic/base_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/path_cost_heuristic/type_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/path_cost_heuristic/type_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/pelvis_to_feet_center/x: 0.0
+ * /vigir/footstep_planning/pelvis_to_feet_center/y: 0.0
+ * /vigir/footstep_planning/pelvis_to_feet_center/z: -0.239
+ * /vigir/footstep_planning/plugin_sets/default/1_terrain_model/import: terrain_model
+ * /vigir/footstep_planning/plugin_sets/default/1_terrain_model/params/collision_check_flag: 4
+ * /vigir/footstep_planning/plugin_sets/default/1_terrain_model/params/terrain_model_topic: /terrain_model
+ * /vigir/footstep_planning/plugin_sets/default/2_upper_body_grid_map_model/import: upper_body_grid_m...
+ * /vigir/footstep_planning/plugin_sets/default/2_upper_body_grid_map_model/params/collision_check_flag: 2
+ * /vigir/footstep_planning/plugin_sets/default/2_upper_body_grid_map_model/params/grid_map_topic: /body_level_grid_map
+ * /vigir/footstep_planning/plugin_sets/default/3_foot_grid_map_model/import: foot_grid_map_model
+ * /vigir/footstep_planning/plugin_sets/default/3_foot_grid_map_model/params/collision_check_flag: 1
+ * /vigir/footstep_planning/plugin_sets/default/3_foot_grid_map_model/params/grid_map_topic: /ground_level_gri...
+ * /vigir/footstep_planning/plugin_sets/default/const_step_cost_estimator: none
+ * /vigir/footstep_planning/plugin_sets/default/dynamics_heuristic: none
+ * /vigir/footstep_planning/plugin_sets/default/euclidean_heuristic: none
+ * /vigir/footstep_planning/plugin_sets/default/euclidean_step_cost_estimator: none
+ * /vigir/footstep_planning/plugin_sets/default/ground_contact_step_cost_estimator: none
+ * /vigir/footstep_planning/plugin_sets/default/reachability_polygon: none
+ * /vigir/footstep_planning/plugin_sets/default/reachability_state_generator: none
+ * /vigir/footstep_planning/plugin_sets/default/step_cost_heuristic: none
+ * /vigir/footstep_planning/plugin_sets/default/step_dynamics_post_process: none
+ * /vigir/footstep_planning/plugin_sets/default/step_plan_msg_plugin: none
+ * /vigir/footstep_planning/plugin_sets/nao_default/2_upper_body_grid_map_model/import: upper_body_grid_m...
+ * /vigir/footstep_planning/plugin_sets/nao_default/2_upper_body_grid_map_model/params/collision_check_flag: 2
+ * /vigir/footstep_planning/plugin_sets/nao_default/2_upper_body_grid_map_model/params/grid_map_topic: /body_level_grid_map
+ * /vigir/footstep_planning/plugin_sets/nao_default/3_foot_grid_map_model/import: foot_grid_map_model
+ * /vigir/footstep_planning/plugin_sets/nao_default/3_foot_grid_map_model/params/collision_check_flag: 1
+ * /vigir/footstep_planning/plugin_sets/nao_default/3_foot_grid_map_model/params/grid_map_topic: /ground_level_gri...
+ * /vigir/footstep_planning/plugin_sets/nao_default/const_step_cost_estimator: none
+ * /vigir/footstep_planning/plugin_sets/nao_default/dynamics_heuristic: none
+ * /vigir/footstep_planning/plugin_sets/nao_default/euclidean_heuristic: none
+ * /vigir/footstep_planning/plugin_sets/nao_default/euclidean_step_cost_estimator: none
+ * /vigir/footstep_planning/plugin_sets/nao_default/ground_contact_step_cost_estimator: none
+ * /vigir/footstep_planning/plugin_sets/nao_default/reachability_polygon: none
+ * /vigir/footstep_planning/plugin_sets/nao_default/reachability_state_generator: none
+ * /vigir/footstep_planning/plugin_sets/nao_default/step_cost_heuristic: none
+ * /vigir/footstep_planning/plugin_sets/nao_default/step_dynamics_post_process: none
+ * /vigir/footstep_planning/plugin_sets/nao_default/step_plan_msg_plugin: none
+ * /vigir/footstep_planning/plugin_sets/nao_euclidean/2_upper_body_grid_map_model/import: upper_body_grid_m...
+ * /vigir/footstep_planning/plugin_sets/nao_euclidean/2_upper_body_grid_map_model/params/collision_check_flag: 2
+ * /vigir/footstep_planning/plugin_sets/nao_euclidean/2_upper_body_grid_map_model/params/grid_map_topic: /body_level_grid_map
+ * /vigir/footstep_planning/plugin_sets/nao_euclidean/3_foot_grid_map_model/import: foot_grid_map_model
+ * /vigir/footstep_planning/plugin_sets/nao_euclidean/3_foot_grid_map_model/params/collision_check_flag: 1
+ * /vigir/footstep_planning/plugin_sets/nao_euclidean/3_foot_grid_map_model/params/grid_map_topic: /ground_level_gri...
+ * /vigir/footstep_planning/plugin_sets/nao_euclidean/const_step_cost_estimator: none
+ * /vigir/footstep_planning/plugin_sets/nao_euclidean/dynamics_heuristic: none
+ * /vigir/footstep_planning/plugin_sets/nao_euclidean/euclidean_heuristic/import: euclidean_heuristic
+ * /vigir/footstep_planning/plugin_sets/nao_euclidean/euclidean_step_cost_estimator: none
+ * /vigir/footstep_planning/plugin_sets/nao_euclidean/ground_contact_step_cost_estimator: none
+ * /vigir/footstep_planning/plugin_sets/nao_euclidean/reachability_polygon: none
+ * /vigir/footstep_planning/plugin_sets/nao_euclidean/reachability_state_generator: none
+ * /vigir/footstep_planning/plugin_sets/nao_euclidean/step_cost_heuristic: none
+ * /vigir/footstep_planning/plugin_sets/nao_euclidean/step_dynamics_post_process: none
+ * /vigir/footstep_planning/plugin_sets/nao_euclidean/step_plan_msg_plugin: none
+ * /vigir/footstep_planning/plugin_sets/nao_hot_map/2_upper_body_grid_map_model/import: upper_body_grid_m...
+ * /vigir/footstep_planning/plugin_sets/nao_hot_map/2_upper_body_grid_map_model/params/collision_check_flag: 2
+ * /vigir/footstep_planning/plugin_sets/nao_hot_map/2_upper_body_grid_map_model/params/grid_map_topic: /body_level_grid_map
+ * /vigir/footstep_planning/plugin_sets/nao_hot_map/3_foot_grid_map_model/import: foot_grid_map_model
+ * /vigir/footstep_planning/plugin_sets/nao_hot_map/3_foot_grid_map_model/params/collision_check_flag: 1
+ * /vigir/footstep_planning/plugin_sets/nao_hot_map/3_foot_grid_map_model/params/grid_map_topic: /ground_level_gri...
+ * /vigir/footstep_planning/plugin_sets/nao_hot_map/const_step_cost_estimator: none
+ * /vigir/footstep_planning/plugin_sets/nao_hot_map/dynamics_heuristic: none
+ * /vigir/footstep_planning/plugin_sets/nao_hot_map/euclidean_heuristic: hot_map_heuristic
+ * /vigir/footstep_planning/plugin_sets/nao_hot_map/euclidean_step_cost_estimator: none
+ * /vigir/footstep_planning/plugin_sets/nao_hot_map/ground_contact_step_cost_estimator: none
+ * /vigir/footstep_planning/plugin_sets/nao_hot_map/reachability_polygon: none
+ * /vigir/footstep_planning/plugin_sets/nao_hot_map/reachability_state_generator: none
+ * /vigir/footstep_planning/plugin_sets/nao_hot_map/step_cost_heuristic: none
+ * /vigir/footstep_planning/plugin_sets/nao_hot_map/step_dynamics_post_process: none
+ * /vigir/footstep_planning/plugin_sets/nao_hot_map/step_plan_msg_plugin: none
+ * /vigir/footstep_planning/plugin_sets/nao_occupancy_grid/2_upper_body_grid_map_model/import: upper_body_grid_m...
+ * /vigir/footstep_planning/plugin_sets/nao_occupancy_grid/2_upper_body_grid_map_model/params/collision_check_flag: 2
+ * /vigir/footstep_planning/plugin_sets/nao_occupancy_grid/2_upper_body_grid_map_model/params/grid_map_topic: /body_level_grid_map
+ * /vigir/footstep_planning/plugin_sets/nao_occupancy_grid/3_foot_grid_map_model/import: foot_grid_map_model
+ * /vigir/footstep_planning/plugin_sets/nao_occupancy_grid/3_foot_grid_map_model/params/collision_check_flag: 1
+ * /vigir/footstep_planning/plugin_sets/nao_occupancy_grid/3_foot_grid_map_model/params/grid_map_topic: /ground_level_gri...
+ * /vigir/footstep_planning/plugin_sets/nao_occupancy_grid/const_step_cost_estimator: none
+ * /vigir/footstep_planning/plugin_sets/nao_occupancy_grid/dynamics_heuristic: none
+ * /vigir/footstep_planning/plugin_sets/nao_occupancy_grid/euclidean_heuristic/import: occupancy_grid_ma...
+ * /vigir/footstep_planning/plugin_sets/nao_occupancy_grid/euclidean_heuristic/params/grid_map_topic: /ground_level_gri...
+ * /vigir/footstep_planning/plugin_sets/nao_occupancy_grid/euclidean_step_cost_estimator: none
+ * /vigir/footstep_planning/plugin_sets/nao_occupancy_grid/ground_contact_step_cost_estimator: none
+ * /vigir/footstep_planning/plugin_sets/nao_occupancy_grid/reachability_polygon: none
+ * /vigir/footstep_planning/plugin_sets/nao_occupancy_grid/reachability_state_generator: none
+ * /vigir/footstep_planning/plugin_sets/nao_occupancy_grid/step_cost_heuristic: none
+ * /vigir/footstep_planning/plugin_sets/nao_occupancy_grid/step_dynamics_post_process: none
+ * /vigir/footstep_planning/plugin_sets/nao_occupancy_grid/step_plan_msg_plugin: none
+ * /vigir/footstep_planning/reachability_polygon/base_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/reachability_polygon/base_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/reachability_polygon/type_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/reachability_polygon/type_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/reachability_state_generator/base_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/reachability_state_generator/base_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/reachability_state_generator/type_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/reachability_state_generator/type_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/robot_name: Nao
+ * /vigir/footstep_planning/step_cost_heuristic/base_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/step_cost_heuristic/base_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/step_cost_heuristic/type_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/step_cost_heuristic/type_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/step_dynamics_post_process/base_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/step_dynamics_post_process/base_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/step_dynamics_post_process/type_cl[0m[ INFO] [1518640002.730783752]: Updated parameter set 'Nao'.[0m
+[0m[ INFO] [1518640002.730906132]: [loadParameterSets] Loaded 'Nao' from 'planning_params_nao.yaml' with 37 parameters[0m
+[0m[ INFO] [1518640003.024200708]: Updated parameter set 'default'.[0m
+[0m[ INFO] [1518640003.024240168]: [loadParameterSets] Loaded 'default' from 'footstep_planner_params_default.yaml' with 38 parameters[0m
+[0m[ INFO] [1518640003.027212312]: [ParameterManager] Set 'Nao' as active parameter set.[0m
+[0m[ INFO] [1518640003.255997696]: [PluginManager] Added ClassLoader for plugins of type 'vigir_footstep_planning::StateGeneratorPlugin'.[0m
+[0m[ INFO] [1518640003.256692724]: [PluginManager] Added ClassLoader for plugins of type 'vigir_footstep_planning::StepPlanMsgPlugin'.[0m
+[0m[ INFO] [1518640003.257361429]: [PluginManager] Added ClassLoader for plugins of type 'vigir_footstep_planning::ReachabilityPlugin'.[0m
+[0m[ INFO] [1518640003.258013382]: [PluginManager] Added ClassLoader for plugins of type 'vigir_footstep_planning::StepCostEstimatorPlugin'.[0m
+[0m[ INFO] [1518640003.258665565]: [PluginManager] Added ClassLoader for plugins of type 'vigir_footstep_planning::HeuristicPlugin'.[0m
+[0m[ INFO] [1518640003.259313879]: [PluginManager] Added ClassLoader for plugins of type 'vigir_footstep_planning::PostProcessPlugin'.[0m
+[0m[ INFO] [1518640003.259945186]: [PluginManager] Added ClassLoader for plugins of type 'vigir_footstep_planning::CollisionCheckPlugin'.[0m
+[0m[ INFO] [1518640003.260592571]: [PluginManager] Added ClassLoader for plugins of type 'vigir_footstep_planning::TerrainModelPlugin'.[0m
+[0m[ INFO] [1518640003.286038533]: foot/separation: 0.100000[0m
+[0m[ INFO] [1518640003.286066401]: foot/size/x: 0.150000[0m
+[0m[ INFO] [1518640003.286079432]: foot/size/y: 0.081000[0m
+[0m[ INFO] [1518640003.286091005]: foot/size/z: 0.030000[0m
+[0m[ INFO] [1518640003.286164414]: Current x in iteration: -0.010000 0[0m
+[0m[ INFO] [1518640003.286183040]: Current y in iteration: 0.150000 0[0m
+[0m[ INFO] [1518640003.286206413]: Current step width in iteration: 0.150333 0[0m
+[0m[ INFO] [1518640003.286226492]: Current max_step_dist in iteration: 0.150333 0[0m
+[0m[ INFO] [1518640003.286239841]: Current x in iteration: -0.025000 1[0m
+[0m[ INFO] [1518640003.286268185]: Current y in iteration: 0.130000 1[0m
+[0m[ INFO] [1518640003.286279531]: Current step width in iteration: 0.132382 1[0m
+[0m[ INFO] [1518640003.286290942]: Current max_step_dist in iteration: 0.150333 1[0m
+[0m[ INFO] [1518640003.286302603]: Current x in iteration: -0.025000 2[0m
+[0m[ INFO] [1518640003.286331781]: Current y in iteration: 0.087500 2[0m
+[0m[ INFO] [1518640003.286345703]: Current step width in iteration: 0.091001 2[0m
+[0m[ INFO] [1518640003.286356509]: Current max_step_dist in iteration: 0.150333 2[0m
+[0m[ INFO] [1518640003.286367315]: Current x in iteration: 0.070000 3[0m
+[0m[ INFO] [1518640003.286379113]: Current y in iteration: 0.087500 3[0m
+[0m[ INFO] [1518640003.286389898]: Current step width in iteration: 0.112055 3[0m
+[0m[ INFO] [1518640003.286400184]: Current max_step_dist in iteration: 0.150333 3[0m
+[0m[ INFO] [1518640003.286411631]: Current x in iteration: 0.070000 4[0m
+[0m[ INFO] [1518640003.286450931]: Current y in iteration: 0.130000 4[0m
+[0m[ INFO] [1518640003.286482876]: Current step width in iteration: 0.147648 4[0m
+[0m[ INFO] [1518640003.286500198]: Current max_step_dist in iteration: 0.150333 4[0m
+[0m[ INFO] [1518640003.286511882]: Current x in iteration: 0.040000 5[0m
+[0m[ INFO] [1518640003.286523700]: Current y in iteration: 0.150000 5[0m
+[0m[ INFO] [1518640003.286534304]: Current step width in iteration: 0.155242 5[0m
+[0m[ INFO] [1518640003.286544479]: Current max_step_dist in iteration: 0.155242 5[0m
+[0m[ INFO] [1518640003.286554839]: Current x in iteration: 0.000000 6[0m
+[0m[ INFO] [1518640003.286570954]: Current y in iteration: 0.150000 6[0m
+[0m[ INFO] [1518640003.286583639]: Current step width in iteration: 0.150000 6[0m
+[0m[ INFO] [1518640003.286595360]: Current max_step_dist in iteration: 0.155242 6[0m
+[0m[ INFO] [1518640003.286711900]: max_step_range/x: 0.070000[0m
+[0m[ INFO] [1518640003.286731082]: max_step_range/y: 0.150000[0m
+[0m[ INFO] [1518640003.286744004]: max_step_range/theta: 0.500000[0m
+[0m[ INFO] [1518640003.286757719]: max_step_range/inv_x: -0.025000[0m
+[0m[ INFO] [1518640003.286769515]: max_step_range/inv_y: 0.087500[0m
+[0m[ INFO] [1518640003.286781299]: max_step_range/inv_theta: 0.000000[0m
+[0m[ INFO] [1518640003.286792696]: max_step_range/width: 0.165529[0m
+[0m[ INFO] [1518640003.286804823]: max_step_dist/x: 0.070000[0m
+[0m[ INFO] [1518640003.286816567]: max_step_dist/y: 0.075000[0m
+[0m[ INFO] [1518640003.287905688]: [PluginManager] loadPluginSet: Loading plugin set 'nao_default'...[0m
+[0m[ INFO] [1518640003.581051582]: [PluginManager] addPlugin: Added new plugin '2_upper_body_grid_map_model' with type_class 'vigir_footstep_planning::UpperBodyGridMapModel'[0m
+[0m[ INFO] [1518640003.581292726]: [PluginManager] addPlugin: Added new plugin '3_foot_grid_map_model' with type_class 'vigir_footstep_planning::FootGridMapModel'[0m
+[0m[ INFO] [1518640003.581665169]: [PluginManager] addPlugin: Added new plugin 'const_step_cost_estimator' with type_class 'vigir_footstep_planning::ConstStepCostEstimator'[0m
+[0m[ INFO] [1518640003.581971224]: [PluginManager] addPlugin: Added new plugin 'dynamics_heuristic' with type_class 'vigir_footstep_planning::DynamicsHeuristic'[0m
+[0m[ INFO] [1518640003.582099978]: [PluginManager] addPlugin: Added new plugin 'euclidean_heuristic' with type_class 'vigir_footstep_planning::EuclideanHeuristic'[0m
+[0m[ INFO] [1518640003.582224779]: [PluginManager] addPlugin: Added new plugin 'euclidean_step_cost_estimator' with type_class 'vigir_footstep_planning::EuclideanStepCostEstimator'[0m
+[0m[ INFO] [1518640003.582347901]: [PluginManager] addPlugin: Added new plugin 'ground_contact_step_cost_estimator' with type_class 'vigir_footstep_planning::GroundContactStepCostEstimator'[0m
+[0m[ INFO] [1518640003.582662007]: [PluginManager] addPlugin: Added new plugin 'reachability_polygon' with type_class 'vigir_footstep_planning::ReachabilityPolygon'[0m
+[0m[ INFO] [1518640003.582991340]: [PluginManager] addPlugin: Added new plugin 'reachability_state_generator' with type_class 'vigir_footstep_planning::ReachabilityStateGenerator'[0m
+[0m[ INFO] [1518640003.583132300]: [PluginManager] addPlugin: Added new plugin 'step_cost_heuristic' with type_class 'vigir_footstep_planning::StepCostHeuristic'[0m
+[0m[ INFO] [1518640003.583458229]: [PluginManager] addPlugin: Added new plugin 'step_dynamics_post_process' with type_class 'vigir_footstep_planning::StepDynamicsPostProcess'[0m
+[0m[ INFO] [1518640003.583993746]: [PluginManager] addPlugin: Added new plugin 'step_plan_msg_plugin' with type_class 'vigir_footstep_planning::StepPlanMsgPlugin'[0m
+[0m[ INFO] [1518640003.584172182]: max_step_range/x: 0.070000[0m
+[0m[ INFO] [1518640003.584191458]: max_step_range/y: 0.150000[0m
+[0m[ INFO] [1518640003.584210647]: max_step_range/yaw: 0.500000[0m
+[0m[ INFO] [1518640003.584234023]: max_step_range/width: 0.165529[0m
+[0m[ INFO] [1518640003.584244667]: max_step_range_x_disc: 6[0m
+[0m[ INFO] [1518640003.584271790]: max_step_range_y_disc: 12[0m
+[0m[ INFO] [1518640003.584290795]: max_step_range_inv_x_disc: -2[0m
+[0m[ INFO] [1518640003.584308557]: max_step_range_inv_y_disc: 7[0m
+[0m[ INFO] [1518640003.584323369]: step_range_size_x: 9[0m
+[0m[ INFO] [1518640003.584343628]: step_range_size_y: 6[0m
+[0m[ INFO] [1518640003.584363168]: step_range_size: 54[0m
+[0m[ INFO] [1518640003.584382507]: Reachability Polygon:[0m
+[0m[ INFO] [1518640003.584449661]: 7: + + + + + + + + - [0m
+[0m[ INFO] [1518640003.584478749]: 8: + + + + + + + + - [0m
+[0m[ INFO] [1518640003.584503632]: 9: + + + + + + + + - [0m
+[0m[ INFO] [1518640003.584525901]: 10: + + + + + + + + - [0m
+[0m[ INFO] [1518640003.584538940]: 11: - + + + + + + - - [0m
+[0m[ INFO] [1518640003.584559649]: 12: - - - - - - - - - [0m
+[0m[ INFO] [1518640003.584875560]: [Manager] Spawning 4 workers.[0m
+[0m[ INFO] [1518640003.584927569]: [Worker (7f87600f2780)] Start request[0m
+[0m[ INFO] [1518640003.585037888]: [Worker (7f87600f2780)] Start request[0m
+[0m[ INFO] [1518640003.585075955]: [Worker (7f87600f2780)] Start request[0m
+[0m[ INFO] [1518640003.585147330]: [Worker (7f87600f2780)] Start request[0m
+[0m[ INFO] [1518640003.585198139]: [Worker (7f87210cf700)] Started with 50 jobs per thread.[0m
+[0m[ INFO] [1518640003.585286603]: [Worker (7f87218d0700)] Started with 50 jobs per thread.[0m
+[0m[ INFO] [1518640003.585356164]: [Worker (7f87208ce700)] Started with 50 jobs per thread.[0m
+[0m[ INFO] [1518640003.585398948]: In step range[0m
+[0m[ INFO] [1518640003.585413779]: Current Y iteration: 7[0m
+[0m[ INFO] [1518640003.585434142]: Current X iteration: -2[0m
+[0m[ INFO] [1518640003.585464216]: [Worker (7f8713fff700)] Started with 50 jobs per thread.[0m
+[0m[ INFO] [1518640003.585766901]: In step range[0m
+[0m[ INFO] [1518640003.585786462]: Current Y iteration: 7[0m
+[0m[ INFO] [1518640003.585800515]: Current X iteration: -1[0m
+[0m[ INFO] [1518640003.586079732]: In step range[0m
+[0m[ INFO] [1518640003.586093803]: Current Y iteration: 7[0m
+[0m[ INFO] [1518640003.586118655]: Current X iteration: 0[0m
+[0m[ INFO] [1518640003.586384402]: In step range[0m
+[0m[ INFO] [1518640003.586405756]: Current Y iteration: 7[0m
+[0m[ INFO] [1518640003.586419741]: Current X iteration: 1[0m
+[0m[ INFO] [1518640003.586687302]: In step range[0m
+[0m[ INFO] [1518640003.586707986]: Current Y iteration: 7[0m
+[0m[ INFO] [1518640003.586719418]: Current X iteration: 2[0m
+[0m[ INFO] [1518640003.586915443]: In step range[0m
+[0m[ INFO] [1518640003.586923131]: Current Y iteration: 7[0m
+[0m[ INFO] [1518640003.586930130]: Current X iteration: 3[0m
+[0m[ INFO] [1518640003.587125828]: In step range[0m
+[0m[ INFO] [1518640003.587149435]: Current Y iteration: 7[0m
+[0m[ INFO] [1518640003.587163030]: Current X iteration: 4[0m
+[0m[ INFO] [1518640003.587386614]: In step range[0m
+[0m[ INFO] [1518640003.587400086]: Current Y iteration: 7[0m
+[0m[ INFO] [1518640003.587413310]: Current X iteration: 5[0m
+[0m[ INFO] [1518640003.587648805]: In step range[0m
+[0m[ INFO] [1518640003.587661454]: Current Y iteration: 8[0m
+[0m[ INFO] [1518640003.587692300]: Current X iteration: -2[0m
+[0m[ INFO] [1518640003.588020157]: In step range[0m
+[0m[ INFO] [1518640003.588046523]: Current Y iteration: 8[0m
+[0m[ INFO] [1518640003.588059930]: Current X iteration: -1[0m
+[0m[ INFO] [1518640003.588325185]: In step range[0m
+[0m[ INFO] [1518640003.588342501]: Current Y iteration: 8[0m
+[0m[ INFO] [1518640003.588360245]: Current X iteration: 0[0m
+[0m[ INFO] [1518640003.588576890]: In step range[0m
+[0m[ INFO] [1518640003.588584790]: Current Y iteration: 8[0m
+[0m[ INFO] [1518640003.588601289]: Current X iteration: 1[0m
+[0m[ INFO] [1518640003.588768697]: In step range[0m
+[0m[ INFO] [1518640003.588778540]: Current Y iteration: 8[0m
+[0m[ INFO] [1518640003.588790952]: Current X iteration: 2[0m
+[0m[ INFO] [1518640003.589056761]: In step range[0m
+[0m[ INFO] [1518640003.589069987]: Current Y iteration: 8[0m
+[0m[ INFO] [1518640003.589098895]: Current X iteration: 3[0m
+[0m[ INFO] [1518640003.589351228]: In step range[0m
+[0m[ INFO] [1518640003.589378012]: Current Y iteration: 8[0m
+[0m[ INFO] [1518640003.589392305]: Current X iteration: 4[0m
+[0m[ INFO] [1518640003.589671334]: In step range[0m
+[0m[ INFO] [1518640003.589688133]: Current Y iteration: 8[0m
+[0m[ INFO] [1518640003.589705912]: Current X iteration: 5[0m
+[0m[ INFO] [1518640003.589971295]: In step range[0m
+[0m[ INFO] [1518640003.589980361]: Current Y iteration: 9[0m
+[0m[ INFO] [1518640003.589998904]: Current X iteration: -2[0m
+[0m[ INFO] [1518640003.590255410]: In step range[0m
+[0m[ INFO] [1518640003.590263644]: Current Y iteration: 9[0m
+[0m[ INFO] [1518640003.590270766]: Current X iteration: -1[0m
+[0m[ INFO] [1518640003.590523424]: In step range[0m
+[0m[ INFO] [1518640003.590537058]: Current Y iteration: 9[0m
+[0m[ INFO] [1518640003.590565377]: Current X iteration: 0[0m
+[0m[ INFO] [1518640003.590829456]: In step range[0m
+[0m[ INFO] [1518640003.590852824]: Current Y iteration: 9[0m
+[0m[ INFO] [1518640003.590866989]: Current X iteration: 1[0m
+[0m[ INFO] [1518640003.591135438]: In step range[0m
+[0m[ INFO] [1518640003.591152838]: Current Y iteration: 9[0m
+[0m[ INFO] [1518640003.591168374]: Current X iteration: 2[0m
+[0m[ INFO] [1518640003.591445016]: In step range[0m
+[0m[ INFO] [1518640003.591465822]: Current Y iteration: 9[0m
+[0m[ INFO] [1518640003.591484401]: Current X iteration: 3[0m
+[0m[ INFO] [1518640003.591651073]: In step range[0m
+[0m[ INFO] [1518640003.591658545]: Current Y iteration: 9[0m
+[0m[ INFO] [1518640003.591666063]: Current X iteration: 4[0m
+[0m[ INFO] [1518640003.591921012]: In step range[0m
+[0m[ INFO] [1518640003.591935695]: Current Y iteration: 9[0m
+[0m[ INFO] [1518640003.591958684]: Current X iteration: 5[0m
+[0m[ INFO] [1518640003.592217677]: In step range[0m
+[0m[ INFO] [1518640003.592241370]: Current Y iteration: 10[0m
+[0m[ INFO] [1518640003.592255714]: Current X iteration: -2[0m
+[0m[ INFO] [1518640003.592494013]: In step range[0m
+[0m[ INFO] [1518640003.592509345]: Current Y iteration: 10[0m
+[0m[ INFO] [1518640003.592543048]: Current X iteration: -1[0m
+[0m[ INFO] [1518640003.592818377]: In step range[0m
+[0m[ INFO] [1518640003.592832681]: Current Y iteration: 10[0m
+[0m[ INFO] [1518640003.592841384]: Current X iteration: 0[0m
+[0m[ INFO] [1518640003.593016809]: In step range[0m
+[0m[ INFO] [1518640003.593040535]: Current Y iteration: 10[0m
+[0m[ INFO] [1518640003.593056639]: Current X iteration: 1[0m
+[0m[ INFO] [1518640003.593314139]: In step range[0m
+[0m[ INFO] [1518640003.593327940]: Current Y iteration: 10[0m
+[0m[ INFO] [1518640003.593340940]: Current X iteration: 2[0m
+[0m[ INFO] [1518640003.594979510]: In step range[0m
+[0m[ INFO] [1518640003.595005231]: Current Y iteration: 10[0m
+[0m[ INFO] [1518640003.595026478]: Current X iteration: 3[0m
+[0m[ INFO] [1518640003.595300287]: In step range[0m
+[0m[ INFO] [1518640003.595315205]: Current Y iteration: 10[0m
+[0m[ INFO] [1518640003.595328209]: Current X iteration: 4[0m
+[0m[ INFO] [1518640003.595580588]: In step range[0m
+[0m[ INFO] [1518640003.595598163]: Current Y iteration: 10[0m
+[0m[ INFO] [1518640003.595611122]: Current X iteration: 5[0m
+[0m[ INFO] [1518640003.595836807]: In step range[0m
+[0m[ INFO] [1518640003.595847086]: Current Y iteration: 11[0m
+[0m[ INFO] [1518640003.595855440]: Current X iteration: -1[0m
+[0m[ INFO] [1518640003.596189203]: In step range[0m
+[0m[ INFO] [1518640003.596198151]: Current Y iteration: 11[0m
+[0m[ INFO] [1518640003.596214767]: Current X iteration: 0[0m
+[0m[ INFO] [1518640003.596369236]: In step range[0m
+[0m[ INFO] [1518640003.596378691]: Current Y iteration: 11[0m
+[0m[ INFO] [1518640003.596396689]: Current X iteration: 1[0m
+[0m[ INFO] [1518640003.596630613]: In step range[0m
+[0m[ INFO] [1518640003.596656367]: Current Y iteration: 11[0m
+[0m[ INFO] [1518640003.596683602]: Current X iteration: 2[0m
+[0m[ INFO] [1518640003.596933481]: In step range[0m
+[0m[ INFO] [1518640003.596960551]: Current Y iteration: 11[0m
+[0m[ INFO] [1518640003.596975390]: Current X iteration: 3[0m
+[0m[ INFO] [1518640003.597237231]: In step range[0m
+[0m[ INFO] [1518640003.597251274]: Current Y iteration: 11[0m
+[0m[ INFO] [1518640003.597278916]: Current X iteration: 4[0m
+[0m[ INFO] [1518640003.614221674]: [PluginManager] loadPluginSet: Loaded plugin set 'nao_default' successfully.[0m
+[0m[ INFO] [1518640003.614375302]: [StateGenerator] Plugins loaded:[0m
+[0m[ INFO] [1518640003.614401824]:     reachability_state_generator[0m
+[0m[ INFO] [1518640003.614742030]: [Manager] Spawning 4 workers.[0m
+[0m[ INFO] [1518640003.614762896]: [Worker (7f87600f2780)] Start request[0m
+[0m[ INFO] [1518640003.614830585]: [Worker (7f87600f2780)] Start request[0m
+[0m[ INFO] [1518640003.614876278]: [Worker (7f87137fe700)] Started with 50 jobs per thread.[0m
+[0m[ INFO] [1518640003.614915192]: [Worker (7f87600f2780)] Start request[0m
+[0m[ INFO] [1518640003.614964682]: [Worker (7f8712ffd700)] Started with 50 jobs per thread.[0m
+[0m[ INFO] [1518640003.615003768]: [Worker (7f87600f2780)] Start request[0m
+[0m[ INFO] [1518640003.615083297]: [Worker (7f8711ffb700)] Started with 50 jobs per thread.[0m
+[0m[ INFO] [1518640003.615130976]: [Manager] Destruct[0m
+[0m[ INFO] [1518640003.615168913]: [Worker (7f87127fc700)] Started with 50 jobs per thread.[0m
+[0m[ INFO] [1518640003.615200340]: [Manager] Wait for thread termination...[0m
+[0m[ INFO] [1518640003.615260623]: [Worker (7f87600f2780)] Stop request[0m
+[0m[ INFO] [1518640003.615587108]: [Worker (7f87600f2780)] Stop request[0m
+[0m[ INFO] [1518640003.615708533]: [Worker (7f87600f2780)] Stop request[0m
+[0m[ INFO] [1518640003.615788891]: [Worker (7f87600f2780)] Stop request[0m
+[0m[ INFO] [1518640003.615919953]: [Manager] Wait for thread termination...Done![0m
+[0m[ INFO] [1518640003.615970718]: [Worker (7f87600f2780)] Destruct[0m
+[0m[ INFO] [1518640003.615995270]: [Worker (7f87600f2780)] Stop request[0m
+[0m[ INFO] [1518640003.616037432]: [Worker (7f87600f2780)] Destruct[0m
+[0m[ INFO] [1518640003.616060776]: [Worker (7f87600f2780)] Stop request[0m
+[0m[ INFO] [1518640003.616090377]: [Worker (7f87600f2780)] Destruct[0m
+[0m[ INFO] [1518640003.616115418]: [Worker (7f87600f2780)] Stop request[0m
+[0m[ INFO] [1518640003.616144289]: [Worker (7f87600f2780)] Destruct[0m
+[0m[ INFO] [1518640003.616168147]: [Worker (7f87600f2780)] Stop request[0m
+[0m[ INFO] [1518640003.616215724]: In step range[0m
+[0m[ INFO] [1518640003.616237532]: Current Y iteration: 7[0m
+[0m[ INFO] [1518640003.616261828]: Current X iteration: -2[0m
+[0m[ INFO] [1518640003.616613074]: In step range[0m
+[0m[ INFO] [1518640003.616636442]: Current Y iteration: 7[0m
+[0m[ INFO] [1518640003.616659507]: Current X iteration: -1[0m
+[0m[ INFO] [1518640003.616973420]: In step range[0m
+[0m[ INFO] [1518640003.616996626]: Current Y iteration: 7[0m
+[0m[ INFO] [1518640003.617022586]: Current X iteration: 0[0m
+[0m[ INFO] [1518640003.617336088]: In step range[0m
+[0m[ INFO] [1518640003.617357893]: Current Y iteration: 7[0m
+[0m[ INFO] [1518640003.617381377]: Current X iteration: 1[0m
+[0m[ INFO] [1518640003.617694355]: In step range[0m
+[0m[ INFO] [1518640003.617716799]: Current Y iteration: 7[0m
+[0m[ INFO] [1518640003.617740783]: Current X iteration: 2[0m
+[0m[ INFO] [1518640003.618052146]: In step range[0m
+[0m[ INFO] [1518640003.618075410]: Current Y iteration: 7[0m
+[0m[ INFO] [1518640003.618101202]: Current X iteration: 3[0m
+[0m[ INFO] [1518640003.618414942]: In step range[0m
+[0m[ INFO] [1518640003.618438609]: Current Y iteration: 7[0m
+[0m[ INFO] [1518640003.618462733]: Current X iteration: 4[0m
+[0m[ INFO] [1518640003.618783150]: In step range[0m
+[0m[ INFO] [1518640003.618805885]: Current Y iteration: 7[0m
+[0m[ INFO] [1518640003.618829001]: Current X iteration: 5[0m
+[0m[ INFO] [1518640003.619146580]: In step range[0m
+[0m[ INFO] [1518640003.619168457]: Current Y iteration: 8[0m
+[0m[ INFO] [1518640003.619191410]: Current X iteration: -2[0m
+[0m[ INFO] [1518640003.619521042]: In step range[0m
+[0m[ INFO] [1518640003.619543171]: Current Y iteration: 8[0m
+[0m[ INFO] [1518640003.619575024]: Current X iteration: -1[0m
+[0m[ INFO] [1518640003.619887346]: In step range[0m
+[0m[ INFO] [1518640003.619909202]: Current Y iteration: 8[0m
+[0m[ INFO] [1518640003.619933931]: Current X iteration: 0[0m
+[0m[ INFO] [1518640003.620249505]: In step range[0m
+[0m[ INFO] [1518640003.620274743]: Current Y iteration: 8[0m
+[0m[ INFO] [1518640003.620301252]: Current X iteration: 1[0m
+[0m[ INFO] [1518640003.620613323]: In step range[0m
+[0m[ INFO] [1518640003.620635795]: Current Y iteration: 8[0m
+[0m[ INFO] [1518640003.620659886]: Current X iteration: 2[0m
+[0m[ INFO] [1518640003.620973132]: In step range[0m
+[0m[ INFO] [1518640003.620996551]: Current Y iteration: 8[0m
+[0m[ INFO] [1518640003.621019674]: Current X iteration: 3[0m
+[0m[ INFO] [1518640003.621331688]: In step range[0m
+[0m[ INFO] [1518640003.621377123]: Current Y iteration: 8[0m
+[0m[ INFO] [1518640003.621401259]: Current X iteration: 4[0m
+[0m[ INFO] [1518640003.621715301]: In step range[0m
+[0m[ INFO] [1518640003.621738573]: Current Y iteration: 8[0m
+[0m[ INFO] [1518640003.621764465]: Current X iteration: 5[0m
+[0m[ INFO] [1518640003.622084762]: In step range[0m
+[0m[ INFO] [1518640003.622107395]: Current Y iteration: 9[0m
+[0m[ INFO] [1518640003.622130844]: Current X iteration: -2[0m
+[0m[ INFO] [1518640003.622450535]: In step range[0m
+[0m[ INFO] [1518640003.622472504]: Current Y iteration: 9[0m
+[0m[ INFO] [1518640003.622495013]: Current X iteration: -1[0m
+[0m[ INFO] [1518640003.622810707]: In step range[0m
+[0m[ INFO] [1518640003.622833101]: Current Y iteration: 9[0m
+[0m[ INFO] [1518640003.622856633]: Current X iteration: 0[0m
+[0m[ INFO] [1518640003.623165710]: In step range[0m
+[0m[ INFO] [1518640003.623188891]: Current Y iteration: 9[0m
+[0m[ INFO] [1518640003.623211804]: Current X iteration: 1[0m
+[0m[ INFO] [1518640003.623503032]: In step range[0m
+[0m[ INFO] [1518640003.623514170]: Current Y iteration: 9[0m
+[0m[ INFO] [1518640003.623525156]: Current X iteration: 2[0m
+[0m[ INFO] [1518640003.623684274]: In step range[0m
+[0m[ INFO] [1518640003.623694663]: Current Y iteration: 9[0m
+[0m[ INFO] [1518640003.623704756]: Current X iteration: 3[0m
+[0m[ INFO] [1518640003.623878194]: In step range[0m
+[0m[ INFO] [1518640003.623889192]: Current Y iteration: 9[0m
+[0m[ INFO] [1518640003.623901429]: Current X iteration: 4[0m
+[0m[ INFO] [1518640003.624108678]: In step range[0m
+[0m[ INFO] [1518640003.624121921]: Current Y iteration: 9[0m
+[0m[ INFO] [1518640003.624137864]: Current X iteration: 5[0m
+[0m[ INFO] [1518640003.624356279]: In step range[0m
+[0m[ INFO] [1518640003.624369740]: Current Y iteration: 10[0m
+[0m[ INFO] [1518640003.624386472]: Current X iteration: -2[0m
+[0m[ INFO] [1518640003.624613778]: In step range[0m
+[0m[ INFO] [1518640003.624630137]: Current Y iteration: 10[0m
+[0m[ INFO] [1518640003.624644673]: Current X iteration: -1[0m
+[0m[ INFO] [1518640003.624855764]: In step range[0m
+[0m[ INFO] [1518640003.624869730]: Current Y iteration: 10[0m
+[0m[ INFO] [1518640003.624883040]: Current X iteration: 0[0m
+[0m[ INFO] [1518640003.625359904]: In step range[0m
+[0m[ INFO] [1518640003.625377051]: Current Y iteration: 10[0m
+[0m[ INFO] [1518640003.625391397]: Current X iteration: 1[0m
+[0m[ INFO] [1518640003.625613781]: In step range[0m
+[0m[ INFO] [1518640003.625628363]: Current Y iteration: 10[0m
+[0m[ INFO] [1518640003.625649376]: Current X iteration: 2[0m
+[0m[ INFO] [1518640003.625858558]: In step range[0m
+[0m[ INFO] [1518640003.625874266]: Current Y iteration: 10[0m
+[0m[ INFO] [1518640003.625888304]: Current X iteration: 3[0m
+[0m[ INFO] [1518640003.626104448]: In step range[0m
+[0m[ INFO] [1518640003.626121121]: Current Y iteration: 10[0m
+[0m[ INFO] [1518640003.626135631]: Current X iteration: 4[0m
+[0m[ INFO] [1518640003.626351336]: In step range[0m
+[0m[ INFO] [1518640003.626364378]: Current Y iteration: 10[0m
+[0m[ INFO] [1518640003.626378375]: Current X iteration: 5[0m
+[0m[ INFO] [1518640003.626589701]: In step range[0m
+[0m[ INFO] [1518640003.626602793]: Current Y iteration: 11[0m
+[0m[ INFO] [1518640003.626616894]: Current X iteration: -1[0m
+[0m[ INFO] [1518640003.626832734]: In step range[0m
+[0m[ INFO] [1518640003.626846825]: Current Y iteration: 11[0m
+[0m[ INFO] [1518640003.626863136]: Current X iteration: 0[0m
+[0m[ INFO] [1518640003.627077526]: In step range[0m
+[0m[ INFO] [1518640003.627093664]: Current Y iteration: 11[0m
+[0m[ INFO] [1518640003.627107283]: Current X iteration: 1[0m
+[0m[ INFO] [1518640003.627333065]: In step range[0m
+[0m[ INFO] [1518640003.627347951]: Current Y iteration: 11[0m
+[0m[ INFO] [1518640003.627361480]: Current X iteration: 2[0m
+[0m[ INFO] [1518640003.627576578]: In step range[0m
+[0m[ INFO] [1518640003.627595330]: Current Y iteration: 11[0m
+[0m[ INFO] [1518640003.627609522]: Current X iteration: 3[0m
+[0m[ INFO] [1518640003.627829057]: In step range[0m
+[0m[ INFO] [1518640003.627844507]: Current Y iteration: 11[0m
+[0m[ INFO] [1518640003.627858418]: Current X iteration: 4[0m
+[0m[ INFO] [1518640003.628133467]: [RobotModel] Plugins loaded:[0m
+[0m[ INFO] [1518640003.628153630]:     reachability_polygon[0m
+[0m[ INFO] [1518640003.628188335]: max_step_range/x: 0.070000[0m
+[0m[ INFO] [1518640003.628199906]: max_step_range/y: 0.150000[0m
+[0m[ INFO] [1518640003.628214683]: max_step_range/yaw: 0.500000[0m
+[0m[ INFO] [1518640003.628231293]: max_step_range/width: 0.165529[0m
+[0m[ INFO] [1518640003.628245365]: max_step_range_x_disc: 6[0m
+[0m[ INFO] [1518640003.628259511]: max_step_range_y_disc: 12[0m
+[0m[ INFO] [1518640003.628275508]: max_step_range_inv_x_disc: -2[0m
+[0m[ INFO] [1518640003.628288718]: max_step_range_inv_y_disc: 7[0m
+[0m[ INFO] [1518640003.628299367]: step_range_size_x: 9[0m
+[0m[ INFO] [1518640003.628313886]: step_range_size_y: 6[0m
+[0m[ INFO] [1518640003.628325229]: step_range_size: 54[0m
+[0m[ INFO] [1518640003.628339582]: Reachability Polygon:[0m
+[0m[ INFO] [1518640003.628365159]: 7: + + + + + + + + - [0m
+[0m[ INFO] [1518640003.628381755]: 8: + + + + + + + + - [0m
+[0m[ INFO] [1518640003.628397903]: 9: + + + + + + + + - [0m
+[0m[ INFO] [1518640003.628411537]: 10: + + + + + + + + - [0m
+[0m[ INFO] [1518640003.628433062]: 11: - + + + + + + - - [0m
+[0m[ INFO] [1518640003.628446185]: 12: - - - - - - - - - [0m
+[0m[ INFO] [1518640003.628505051]: [PostProcessor] Plugins loaded:[0m
+[0m[ INFO] [1518640003.628522439]:     step_dynamics_post_process[0m
+[0m[ INFO] [1518640003.628556846]: [WorldModel] Plugins loaded:[0m
+[0m[ INFO] [1518640003.628570266]:     2_upper_body_grid_map_model[0m
+[0m[ INFO] [1518640003.628583429]:     3_foot_grid_map_model[0m
+[0m[ INFO] [1518640003.628752616]: [StepCostEstimator] Plugins loaded:[0m
+[0m[ INFO] [1518640003.628774151]:     const_step_cost_estimator[0m
+[0m[ INFO] [1518640003.628785638]:     euclidean_step_cost_estimator[0m
+[0m[ INFO] [1518640003.628800188]:     ground_contact_step_cost_estimator[0m
+[0m[ INFO] [1518640003.628869910]: [Heuristic] Plugins loaded:[0m
+[0m[ INFO] [1518640003.628887374]:     dynamics_heuristic[0m
+[0m[ INFO] [1518640003.628898305]:     euclidean_heuristic[0m
+[0m[ INFO] [1518640003.628913028]:     step_cost_heuristic[0m
+[0m[ INFO] [1518640003.667030252]: Planning with ARAPlanner[0m
+[0m[ INFO] [1518640003.667079699]: Search direction: forward planning[0m
+ass: vigir_footstep_pl...
+ * /vigir/footstep_planning/step_dynamics_post_process/type_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/step_plan_msg_plugin/base_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/step_plan_msg_plugin/base_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/step_plan_msg_plugin/type_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/step_plan_msg_plugin/type_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/terrain_model/base_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/terrain_model/base_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/terrain_model/type_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/terrain_model/type_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/travel_time_heuristic/base_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/travel_time_heuristic/base_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/travel_time_heuristic/type_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/travel_time_heuristic/type_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/travel_time_step_cost_estimator/base_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/travel_time_step_cost_estimator/base_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/travel_time_step_cost_estimator/type_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/travel_time_step_cost_estimator/type_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/upper_body/origin_shift/x: 0.0
+ * /vigir/footstep_planning/upper_body/origin_shift/y: 0.0
+ * /vigir/footstep_planning/upper_body/origin_shift/z: 0.0
+ * /vigir/footstep_planning/upper_body/size/x: 0.311
+ * /vigir/footstep_planning/upper_body/size/y: 0.275
+ * /vigir/footstep_planning/upper_body/size/z: 0.574
+ * /vigir/footstep_planning/upper_body_grid_map_model/base_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/upper_body_grid_map_model/base_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/upper_body_grid_map_model/type_class: vigir_footstep_pl...
+ * /vigir/footstep_planning/upper_body_grid_map_model/type_class_package: vigir_footstep_pl...
+ * /vigir/footstep_planning/world_frame_id: /world
+
+NODES
+  /vigir/footstep_planning/
+    feet_pose_generator (vigir_feet_pose_generator/feet_pose_generator_node)
+    foot_pose_transformer (vigir_foot_pose_transformer/foot_pose_transformer_node)
+    footstep_planner (vigir_footstep_planner/footstep_planner_node)
+    footstep_planning_vis (vigir_footstep_planning_lib/footstep_planning_vis_node)
+    map_server_1 (map_server/map_server)
+    map_server_2 (map_server/map_server)
+
+auto-starting new master
+[1mprocess[master]: started with pid [9981][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/tgiles/Desktop/install_test/vigir_footstep_install/src/vigir_footstep_planning_core/vigir_footstep_planner/launch/footstep_planner_test_nao.launch http://localhost:11311
+[1msetting /run_id to 5dcb1ec0-11c5-11e8-bc93-484d7eec12b3[0m
+[1mprocess[rosout-1]: started with pid [9994][0m
+started core service [/rosout]
+[1mprocess[vigir/footstep_planning/map_server_1-2]: started with pid [10011][0m
+[1mprocess[vigir/footstep_planning/map_server_2-3]: started with pid [10012][0m
+[1mprocess[vigir/footstep_planning/feet_pose_generator-4]: started with pid [10020][0m
+[1mprocess[vigir/footstep_planning/foot_pose_transformer-5]: started with pid [10035][0m
+[1mprocess[vigir/footstep_planning/footstep_planning_vis-6]: started with pid [10048][0m
+[1mprocess[vigir/footstep_planning/footstep_planner-7]: started with pid [10067][0m
+[vigir/footstep_planning/footstep_planner-7] killing on exit
+[vigir/footstep_planning/footstep_planning_vis-6] killing on exit
+[vigir/footstep_planning/foot_pose_transformer-5] killing on exit
+[vigir/footstep_planning/feet_pose_generator-4] killing on exit
+[vigir/footstep_planning/map_server_2-3] killing on exit
+[vigir/footstep_planning/map_server_1-2] killing on exit
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
