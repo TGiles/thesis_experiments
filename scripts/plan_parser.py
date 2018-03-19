@@ -10,8 +10,8 @@ def callback(data):
     distance_centroid_travel = 0.0
     current_centroid = (0.0, 0.0)
     planned_steps = data.steps
-    for x in range(0, len(planned_steps), 2):
-        if x == len(planned_steps) or x == len(planned_steps) - 1:
+    for x in range(0, len(planned_steps)):
+        if x == len(planned_steps):
             break
         left_foot = None
         right_foot = None
@@ -52,8 +52,9 @@ def plan_parser():
     rospy.spin()
 
 def set_action_defaults(action_goal):
+    action_goal.goal_id.id = rospy.Time.now()
     action_goal.header.frame_id = ""
-    action_goal.goal.plan_request.header.frame_id = "world"
+    action_goal.goal.plan_request.header.frame_id = "/world"
     action_goal.goal.plan_request.planning_mode = 0
     action_goal.goal.plan_request.start_step_index = 0
     action_goal.goal.plan_request.start_foot_selection = 0
@@ -66,6 +67,11 @@ def set_action_defaults(action_goal):
     action_goal.goal.plan_request.start.right.foot_index = 1
     action_goal.goal.plan_request.goal.left.foot_index = 0
     action_goal.goal.plan_request.goal.right.foot_index = 1
+    action_goal.goal.plan_request.start.left.header.frame_id = "/world"
+    action_goal.goal.plan_request.start.right.header.frame_id = "/world"
+    action_goal.goal.plan_request.goal.left.header.frame_id = "/world"
+    action_goal.goal.plan_request.goal.right.header.frame_id = "/world"
+    action_goal.goal.plan_request.parameter_set_name.data = "Nao"
 
     return action_goal
 
@@ -176,5 +182,5 @@ def plan_publisher():
 
 
 if __name__ == '__main__':
-    plan_publisher()
     plan_parser()
+    plan_publisher()
