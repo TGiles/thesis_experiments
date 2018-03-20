@@ -3,8 +3,15 @@ from std_msgs.msg import String
 from vigir_footstep_planning_msgs.msg import StepPlan, Step, Foot, StepPlanRequestActionResult, StepPlanRequestActionGoal
 
 
-def set_action_defaults(action_goal):
-    action_goal.goal_id.id = str(rospy.Time.now())
+def set_action_defaults(action_goal, setup_id=None, plugin_set_id=None, iteration=None):
+    if setup_id and plugin_set_id and iteration:
+        a = 'Setup ID: {}'.format(setup_id)
+        b = 'Plugins ID: {}'.format(plugin_set_id)
+        c = 'Run: {}'.format(iteration)
+        d = a + b + c
+        action_goal.goal_id.id = d
+    else:
+        action_goal.goal_id.id = str(rospy.Time.now())
     action_goal.header.frame_id = ''
     action_goal.goal.plan_request.header.frame_id = '/world'
     action_goal.goal.plan_request.planning_mode = 0
@@ -27,24 +34,28 @@ def set_action_defaults(action_goal):
 
     return action_goal
 
-def set_action_goal(action_goal, config_num):
-    action_goal = set_action_defaults(action_goal)
+def set_action_goal(action_goal, config_num, setup_id=None, plugin_set_id=None, iteration=None):
+    action_goal = set_action_defaults(action_goal, setup_id, plugin_set_id, iteration)
     if config_num == 1:
         action_goal.goal.plan_request.start.left.pose.position.x = 0.5
         action_goal.goal.plan_request.start.left.pose.position.y = 1.45
         action_goal.goal.plan_request.start.left.pose.orientation.z = 1.0
+        action_goal.goal.plan_request.start.left.pose.orientation.w = 0.0
 
         action_goal.goal.plan_request.start.right.pose.position.x = 0.5
-        action_goal.goal.plan_request.start.right.pose.position.y = 1.45
+        action_goal.goal.plan_request.start.right.pose.position.y = 1.55
         action_goal.goal.plan_request.start.right.pose.orientation.z = 1.0
+        action_goal.goal.plan_request.start.right.pose.orientation.w = 0.0
 
         action_goal.goal.plan_request.goal.left.pose.position.x = 1.5
         action_goal.goal.plan_request.goal.left.pose.position.y = 1.45
         action_goal.goal.plan_request.goal.left.pose.orientation.z = 1.0
+        action_goal.goal.plan_request.goal.left.pose.orientation.w = 0.0
 
-        action_goal.goal.plan_request.goal.right.pose.position.x = 0.5
-        action_goal.goal.plan_request.goal.right.pose.position.y = 1.45
+        action_goal.goal.plan_request.goal.right.pose.position.x = 1.5
+        action_goal.goal.plan_request.goal.right.pose.position.y = 1.55
         action_goal.goal.plan_request.goal.right.pose.orientation.z = 1.0
+        action_goal.goal.plan_request.goal.right.pose.orientation.w = 0.0
 
     if config_num == 2:
         action_goal.goal.plan_request.start.left.pose.position.x = 2.58136
