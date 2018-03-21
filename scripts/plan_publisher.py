@@ -34,6 +34,94 @@ def set_action_defaults(action_goal, setup_id=None, plugin_set_id=None, iteratio
 
     return action_goal
 
+def set_action_goal_straights(action_goal, config_num, setup_id=None, plugin_set_id=None, iteration=None):
+    action_goal = set_action_defaults(action_goal, setup_id, plugin_set_id, iteration)
+    if config_num == 1: # straight up
+        action_goal.goal.plan_request.start.left.pose.position.x = -0.05
+        action_goal.goal.plan_request.start.left.pose.position.y = 0.0
+        action_goal.goal.plan_request.start.left.pose.orientation.z = 0.70710808
+        action_goal.goal.plan_request.start.left.pose.orientation.w = 0.70710548
+
+        action_goal.goal.plan_request.start.right.pose.position.x = 0.05
+        action_goal.goal.plan_request.start.right.pose.position.y = 0.0
+        action_goal.goal.plan_request.start.right.pose.orientation.z = 0.70710808
+        action_goal.goal.plan_request.start.right.pose.orientation.w = 0.70710548
+
+        action_goal.goal.plan_request.goal.left.pose.position.x = -0.05
+        action_goal.goal.plan_request.goal.left.pose.position.y = 1.0
+        action_goal.goal.plan_request.goal.left.pose.orientation.z = 0.70710808
+        action_goal.goal.plan_request.goal.left.pose.orientation.w = 0.70710548
+
+        action_goal.goal.plan_request.goal.right.pose.position.x = 0.05
+        action_goal.goal.plan_request.goal.right.pose.position.y = 1.0
+        action_goal.goal.plan_request.goal.right.pose.orientation.z = 0.70710808
+        action_goal.goal.plan_request.goal.right.pose.orientation.w = 0.70710548
+
+    if config_num == 2: # straight right
+        action_goal.goal.plan_request.start.left.pose.position.x = 0.0
+        action_goal.goal.plan_request.start.left.pose.position.y = 0.05
+        action_goal.goal.plan_request.start.left.pose.orientation.z = 0.0
+        action_goal.goal.plan_request.start.left.pose.orientation.w = 1.0
+
+        action_goal.goal.plan_request.start.right.pose.position.x = 0.0
+        action_goal.goal.plan_request.start.right.pose.position.y = -0.05
+        action_goal.goal.plan_request.start.right.pose.orientation.z = 0.0
+        action_goal.goal.plan_request.start.right.pose.orientation.w = 1.0
+
+        action_goal.goal.plan_request.goal.left.pose.position.x = 1.0
+        action_goal.goal.plan_request.goal.left.pose.position.y = 0.05
+        action_goal.goal.plan_request.goal.left.pose.orientation.z = 0.0
+        action_goal.goal.plan_request.goal.left.pose.orientation.w = 1.0
+
+        action_goal.goal.plan_request.goal.right.pose.position.x = 1.0
+        action_goal.goal.plan_request.goal.right.pose.position.y = -0.05
+        action_goal.goal.plan_request.goal.right.pose.orientation.z = 0.0
+        action_goal.goal.plan_request.goal.right.pose.orientation.w = 1.0
+
+    if config_num == 3: # straight down
+        action_goal.goal.plan_request.start.left.pose.position.x = 0.05
+        action_goal.goal.plan_request.start.left.pose.position.y = 0.0
+        action_goal.goal.plan_request.start.left.pose.orientation.z = -0.70710808
+        action_goal.goal.plan_request.start.left.pose.orientation.w = 0.70710548
+
+        action_goal.goal.plan_request.start.right.pose.position.x = -0.05
+        action_goal.goal.plan_request.start.right.pose.position.y = 0.0
+        action_goal.goal.plan_request.start.right.pose.orientation.z = -0.70710808
+        action_goal.goal.plan_request.start.right.pose.orientation.w = 0.70710548
+
+        action_goal.goal.plan_request.goal.left.pose.position.x = 0.05
+        action_goal.goal.plan_request.goal.left.pose.position.y = -1.0
+        action_goal.goal.plan_request.goal.left.pose.orientation.z = -0.70710808
+        action_goal.goal.plan_request.goal.left.pose.orientation.w = 0.70710548
+
+        action_goal.goal.plan_request.goal.right.pose.position.x = -0.05
+        action_goal.goal.plan_request.goal.right.pose.position.y = -1.0
+        action_goal.goal.plan_request.goal.right.pose.orientation.z = -0.70710808
+        action_goal.goal.plan_request.goal.right.pose.orientation.w = 0.70710548
+
+    if config_num == 4: # straight left
+        action_goal.goal.plan_request.start.left.pose.position.x = 0.0
+        action_goal.goal.plan_request.start.left.pose.position.y = -0.05
+        action_goal.goal.plan_request.start.left.pose.orientation.z = 1.0
+        action_goal.goal.plan_request.start.left.pose.orientation.w = 0.0
+
+        action_goal.goal.plan_request.start.right.pose.position.x = 0.0
+        action_goal.goal.plan_request.start.right.pose.position.y = 0.05
+        action_goal.goal.plan_request.start.right.pose.orientation.z = 1.0
+        action_goal.goal.plan_request.start.right.pose.orientation.w = 0.0
+
+        action_goal.goal.plan_request.goal.left.pose.position.x = -1.0
+        action_goal.goal.plan_request.goal.left.pose.position.y = -0.05
+        action_goal.goal.plan_request.goal.left.pose.orientation.z = 1.0
+        action_goal.goal.plan_request.goal.left.pose.orientation.w = 0.0
+
+        action_goal.goal.plan_request.goal.right.pose.position.x = -1.0
+        action_goal.goal.plan_request.goal.right.pose.position.y = 0.05
+        action_goal.goal.plan_request.goal.right.pose.orientation.z = 1.0
+        action_goal.goal.plan_request.goal.right.pose.orientation.w = 0.0
+    rospy.loginfo('action goal set')
+    return action_goal
+
 def set_action_goal(action_goal, config_num, setup_id=None, plugin_set_id=None, iteration=None):
     action_goal = set_action_defaults(action_goal, setup_id, plugin_set_id, iteration)
     if config_num == 1:
@@ -122,24 +210,24 @@ def set_action_goal(action_goal, config_num, setup_id=None, plugin_set_id=None, 
     rospy.loginfo('action goal set')
     return action_goal
 
-def plan_publisher():
-    rospy.init_node('plan_publisher', anonymous=True)
-    rospy.loginfo('plan_publisher started')
-    pub = rospy.Publisher('/vigir/footstep_planning/step_plan_request/goal', StepPlanRequestActionGoal, queue_size=10)
-    action_goal = StepPlanRequestActionGoal()
-    rospy.loginfo('action_goal created')
-    set_action_goal(action_goal, 1)
-    rospy.loginfo('set_action_goal returned')
-    runner = True
-    current_config_number = 1
-    pub.publish(action_goal)
-    rospy.loginfo('action goal:')
-    rospy.loginfo(action_goal)
-    r = rospy.Rate(1)
-    while not rospy.is_shutdown():
-        rospy.loginfo('publisher is still alive')
-        r.sleep()
+# def plan_publisher():
+#     rospy.init_node('plan_publisher', anonymous=True)
+#     rospy.loginfo('plan_publisher started')
+#     pub = rospy.Publisher('/vigir/footstep_planning/step_plan_request/goal', StepPlanRequestActionGoal, queue_size=10)
+#     action_goal = StepPlanRequestActionGoal()
+#     rospy.loginfo('action_goal created')
+#     set_action_goal(action_goal, 1)
+#     rospy.loginfo('set_action_goal returned')
+#     runner = True
+#     current_config_number = 1
+#     pub.publish(action_goal)
+#     rospy.loginfo('action goal:')
+#     rospy.loginfo(action_goal)
+#     r = rospy.Rate(1)
+#     while not rospy.is_shutdown():
+#         rospy.loginfo('publisher is still alive')
+#         r.sleep()
 
 
-if __name__ == '__main__':
-    plan_publisher()
+# if __name__ == '__main__':
+#     plan_publisher()
