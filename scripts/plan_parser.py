@@ -17,6 +17,7 @@ def get_file_writer():
 
 def calc_avgs(result_list):
     length = len(result_list)
+    no_path = False
     avg_body_centroid = 0.0
     avg_steps = 0
     avg_final_eps = 0.0
@@ -24,12 +25,25 @@ def calc_avgs(result_list):
     avg_plan_time = 0.0
     avg_path_cost = 0.0
     for thing in result_list:
-        avg_body_centroid += thing[0]
-        avg_steps += thing[1]
-        avg_final_eps += thing[2]
-        avg_exp_states += thing[3]
-        avg_plan_time += thing[4]
-        avg_path_cost += thing[5]
+        no_path = False
+        if thing[0] == 0.0:
+            no_path = True
+        else:
+            avg_body_centroid += thing[0]
+        if thing[1] == 0:
+            no_path = True
+        else:
+            avg_steps += thing[1]
+        if thing[2] > 1000:
+            no_path = True
+        else:
+            avg_final_eps += thing[2]
+        if no_path:
+            length = length - 1
+        else:
+            avg_exp_states += thing[3]
+            avg_plan_time += thing[4]
+            avg_path_cost += thing[5]
     avg_body_centroid = avg_body_centroid / length
     avg_steps = avg_steps / length
     avg_final_eps = avg_final_eps / length
@@ -104,7 +118,7 @@ def plan_parser(setup_id, plugin_set_id):
     # global plugin_set_id
     callback_done = True
     current_test = create_test_dir()
-    current_setup = create_setup_dir(current_test, setup_id)
+    current_setup = create_setup_dir(current_test, setup_id, plugin_set_id)
     run_result = []
     rospy.init_node('plan_parser', anonymous=True)
     rospy.Subscriber('/vigir/footstep_planning/step_plan_request/result', StepPlanRequestActionResult, callback)

@@ -14,14 +14,14 @@ def create_test_dir():
     os.chmod(experiment_dir + '/' + test_dir, 0776)
     return str(experiment_dir + '/' + test_dir)
 
-def create_setup_dir(current_test_dir, setup_id):
+def create_setup_dir(current_test_dir, setup_id, plugin_set_id):
     try:
-        os.makedirs(current_test_dir + '/' + setup_id)
+        os.makedirs(current_test_dir + '/' + setup_id + plugin_set_id)
     except OSError as e:
         if e.errno != errno.EEXIST:
             raise
-    os.chmod(current_test_dir + '/' + setup_id, 0766)
-    return str(current_test_dir + '/' + setup_id)
+    os.chmod(current_test_dir + '/' + setup_id + plugin_set_id, 0766)
+    return str(current_test_dir + '/' + setup_id + plugin_set_id)
 
 
 # Need CSV for each scenario, similar to thesis tables
