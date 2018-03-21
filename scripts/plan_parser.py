@@ -104,9 +104,9 @@ def callback(data):
     rospy.loginfo('--------------------------------------------')
     # file_writer, config_id, iteration, body_centroid, num_steps, final_eps, expanded_states, plan_time, path_cost
     config_string = str(setup_id + plugin_set_id)
-    write_run(file_writer, config_string, iteration, distance_centroid_travel, len(planned_steps), final_eps, num_of_exp_states, planning_time, num_of_exp_states)
+    write_run(file_writer, config_string, iteration, distance_centroid_travel, len(planned_steps), final_eps, num_of_exp_states, planning_time, total_path_cost)
     callback_done = True
-    run_result.append([distance_centroid_travel, len(planned_steps), final_eps, num_of_exp_states, planning_time, final_eps])
+    run_result.append([distance_centroid_travel, len(planned_steps), final_eps, num_of_exp_states, planning_time, final_eps, total_path_cost])
 
 def plan_parser(setup_id, plugin_set_id):
     # Example of setup id and plugin set
