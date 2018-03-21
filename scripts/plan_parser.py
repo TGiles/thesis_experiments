@@ -127,7 +127,7 @@ def plan_parser(setup_id, plugin_set_id):
     rospy.loginfo('plan_publisher started')
     rate = rospy.Rate(1)
     current_config = 1
-    iteration = 1
+    iteration = 0
     file_obj = open(current_setup + '/Scenario' + str(current_config) + '.csv', 'w+')
     file_writer = csv.writer(file_obj, delimiter=',')
     write_header(file_writer, 'Scenario '+ str(current_config))
