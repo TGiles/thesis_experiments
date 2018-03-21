@@ -24,6 +24,8 @@ def calc_avgs(result_list):
     avg_exp_states = 0
     avg_plan_time = 0.0
     avg_path_cost = 0.0
+    if length == 0:
+        return [avg_body_centroid, avg_steps, avg_final_eps, avg_exp_states, avg_plan_time, avg_path_cost]
     for thing in result_list:
         no_path = False
         if thing[0] == 0.0:
