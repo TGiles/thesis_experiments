@@ -53,12 +53,18 @@ def calc_avgs(result_list):
             avg_exp_states += thing[3]
             avg_plan_time += thing[4]
             avg_path_cost += thing[5]
-    avg_body_centroid = avg_body_centroid / length
-    avg_steps = avg_steps / length
-    avg_final_eps = avg_final_eps / length
-    avg_exp_states = avg_exp_states / length
-    avg_plan_time = avg_plan_time / length
-    avg_path_cost = avg_path_cost / length
+    if avg_body_centroid != 0.0:
+        avg_body_centroid = avg_body_centroid / length
+    if avg_steps != 0.0:
+        avg_steps = avg_steps / length
+    if avg_final_eps != 0.0:
+        avg_final_eps = avg_final_eps / length
+    if avg_exp_states != 0.0:
+        avg_exp_states = avg_exp_states / length
+    if avg_plan_time != 0.0:
+        avg_plan_time = avg_plan_time / length
+    if avg_path_cost != 0.0:
+        avg_path_cost = avg_path_cost / length
     return [avg_body_centroid, avg_steps, avg_final_eps, avg_exp_states, avg_plan_time, avg_path_cost]
 
 def callback(data):
@@ -115,8 +121,9 @@ def callback(data):
     config_string = str(setup_id + ' ' + plugin_set_id)
     write_run(file_writer, config_string, get_iteration(), distance_centroid_travel, len(planned_steps), final_eps, num_of_exp_states, planning_time, total_path_cost)
     iteration += 1
-    callback_done = True
     run_result.append([distance_centroid_travel, len(planned_steps), final_eps, num_of_exp_states, planning_time, final_eps, total_path_cost])
+    raw_input('End of run, press anything to continue')
+    callback_done = True
 
 def plan_parser(setup_id, plugin_set_id):
     # Example of setup id and plugin set
@@ -154,8 +161,6 @@ def plan_parser(setup_id, plugin_set_id):
                 rospy.signal_shutdown('End of testing')
                 return
             # rospy.signal_shutdown('End of testing')
-            plan_publisher(pub, current_config, setup_id, plugin_set_id, iteration)
-            set_callback_done(False)
             if iteration == 5:
                 avg_results = calc_avgs(run_result)
                 write_avg_planning_task(file_writer, str(setup_id + plugin_set_id), 
@@ -168,6 +173,9 @@ def plan_parser(setup_id, plugin_set_id):
                 write_header(file_writer, 'Scenario' + str(current_config))
                 write_run_header(file_writer)
                 iteration = 0
+            else:
+                plan_publisher(pub, current_config, setup_id, plugin_set_id, iteration)
+                set_callback_done(False)
             # else:
             #     iteration += 1
         else:
