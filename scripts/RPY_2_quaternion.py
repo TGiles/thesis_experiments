@@ -7,7 +7,7 @@ def normalize(array):
     return quat / np.sqrt(np.dot(quat, quat))
 
 
-q = quaternion_from_euler(0,0, 1)
+q = quaternion_from_euler(0,0, -2.35619449)
 print q
 print 'before normal'
 q = normalize(q)

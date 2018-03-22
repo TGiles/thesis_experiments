@@ -145,7 +145,7 @@ def plan_parser(setup_id, plugin_set_id):
     pub = rospy.Publisher('/vigir/footstep_planning/step_plan_request/goal', StepPlanRequestActionGoal, queue_size=10)
     rospy.loginfo('plan_publisher started')
     rate = rospy.Rate(0.25)
-    current_config = 1
+    current_config = 5
     iteration = 0
     file_obj = open(current_setup + '/Scenario' + str(current_config) + '.csv', 'w+')
     file_writer = csv.writer(file_obj, delimiter=',')
@@ -157,11 +157,12 @@ def plan_parser(setup_id, plugin_set_id):
         rate.sleep()
         callback_done = get_callback_done()
         if callback_done:
-            if current_config == 5:
+            if current_config == 9:
+                rospy.loginfo('End of Testing')
                 rospy.signal_shutdown('End of testing')
                 return
             # rospy.signal_shutdown('End of testing')
-            if iteration == 5:
+            if iteration == 1:
                 avg_results = calc_avgs(run_result)
                 write_avg_planning_task(file_writer, str(setup_id + plugin_set_id), 
                 avg_results[0], avg_results[1], avg_results[2], avg_results[3], avg_results[4], avg_results[5])
