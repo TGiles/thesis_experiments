@@ -5,6 +5,25 @@ from plan_publisher import *
 from plan_writer import *
 # from vigir_footstep_planning_msgs.action import StepPlanRequestActionGoal
 
+def get_orientation(config):
+    if config == 1:
+        return 'N'
+    if config == 2:
+        return 'E'
+    if config == 3:
+        return 'S'
+    if config == 4:
+        return 'W'
+    if config == 5:
+        return 'NE'
+    if config == 6:
+        return 'SE'
+    if config == 7:
+        return 'SW'
+    if config == 8:
+        return 'NW'
+
+
 def set_callback_done(param):
     global callback_done
     callback_done = param
@@ -74,6 +93,7 @@ def callback(data):
     global setup_id
     global plugin_set_id
     global iteration
+    global current_config
     file_writer = get_file_writer()
     distance_centroid_travel = 0.0
     current_centroid = (0.0, 0.0)
@@ -108,6 +128,7 @@ def callback(data):
     # scale down to grid
     # distance_centroid_travel *= 0.02
     local_iteration = get_iteration()
+    orientation = get_orientation(current_config)
     rospy.loginfo('--------------------------------------------')
     rospy.loginfo('Body centroid euclidean distance: %f [m]', distance_centroid_travel)
     rospy.loginfo('Number of steps in plan: %i', len(planned_steps))
@@ -119,10 +140,11 @@ def callback(data):
     rospy.loginfo('--------------------------------------------')
     # file_writer, config_id, iteration, body_centroid, num_steps, final_eps, expanded_states, plan_time, path_cost
     config_string = str(setup_id + ' ' + plugin_set_id)
-    write_run(file_writer, config_string, get_iteration(), distance_centroid_travel, len(planned_steps), final_eps, num_of_exp_states, planning_time, total_path_cost)
+    # write_run(file_writer, config_string, get_iteration(), distance_centroid_travel, len(planned_steps), final_eps, num_of_exp_states, planning_time, total_path_cost)
+    write_scenario(file_writer, config_string, orientation, distance_centroid_travel, len(planned_steps), final_eps, num_of_exp_states, planning_time, total_path_cost )
     iteration += 1
     run_result.append([distance_centroid_travel, len(planned_steps), final_eps, num_of_exp_states, planning_time, final_eps, total_path_cost])
-    raw_input('End of run, press anything to continue')
+    # raw_input('End of run, press anything to continue')
     callback_done = True
 
 def plan_parser(setup_id, plugin_set_id):
@@ -133,6 +155,7 @@ def plan_parser(setup_id, plugin_set_id):
     global run_result
     global file_writer
     global iteration
+    global current_config
     # global setup_id
     # global plugin_set_id
     callback_done = True
@@ -144,13 +167,18 @@ def plan_parser(setup_id, plugin_set_id):
     rospy.loginfo('Plan_parser started up')
     pub = rospy.Publisher('/vigir/footstep_planning/step_plan_request/goal', StepPlanRequestActionGoal, queue_size=10)
     rospy.loginfo('plan_publisher started')
-    rate = rospy.Rate(0.25)
-    current_config = 5
+    rate = rospy.Rate(0.5)
+    current_config = 1
     iteration = 0
-    file_obj = open(current_setup + '/Scenario' + str(current_config) + '.csv', 'w+')
+    file_obj = open(current_setup + '/AllStraightDirections.csv', 'w+' )
     file_writer = csv.writer(file_obj, delimiter=',')
-    write_header(file_writer, 'Scenario '+ str(current_config))
-    write_run_header(file_writer)
+    write_scenario_header(file_writer)
+    # write_header(file_writer)
+
+    # file_obj = open(current_setup + '/Scenario' + str(current_config) + '.csv', 'w+')
+    # file_writer = csv.writer(file_obj, delimiter=',')
+    # write_header(file_writer, 'Scenario '+ str(current_config))
+    # write_run_header(file_writer)
     # plan_publisher(pub, current_config)
     # rospy.spin()
     while not rospy.is_shutdown():
@@ -163,16 +191,16 @@ def plan_parser(setup_id, plugin_set_id):
                 return
             # rospy.signal_shutdown('End of testing')
             if iteration == 1:
-                avg_results = calc_avgs(run_result)
-                write_avg_planning_task(file_writer, str(setup_id + plugin_set_id), 
-                avg_results[0], avg_results[1], avg_results[2], avg_results[3], avg_results[4], avg_results[5])
+                # avg_results = calc_avgs(run_result)
+                # write_avg_planning_task(file_writer, str(setup_id + plugin_set_id), 
+                # avg_results[0], avg_results[1], avg_results[2], avg_results[3], avg_results[4], avg_results[5])
 
                 run_result = []
                 current_config += 1
-                file_obj = open(current_setup + '/Scenario' + str(current_config)+ '.csv', 'w+')
-                file_writer = csv.writer(file_obj, delimiter=',')
-                write_header(file_writer, 'Scenario' + str(current_config))
-                write_run_header(file_writer)
+                # file_obj = open(current_setup + '/Scenario' + str(current_config)+ '.csv', 'w+')
+                # file_writer = csv.writer(file_obj, delimiter=',')
+                # write_header(file_writer, 'Scenario' + str(current_config))
+                # write_run_header(file_writer)
                 iteration = 0
             else:
                 plan_publisher(pub, current_config, setup_id, plugin_set_id, iteration)

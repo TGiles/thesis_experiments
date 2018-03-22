@@ -66,6 +66,30 @@ def write_run(file_writer, config_id, iteration, body_centroid, num_steps, final
         path_cost
     ])
 
+def write_scenario_header(file_writer):
+    file_writer.writerow([
+        'Configuration ID',
+        'Orientation',
+        'Body Centroid Distance [m]',
+        '# Steps',
+        'Final Epsilon',
+        '# Expanded States',
+        'Planning Time [s]',
+        'Path Cost'
+    ])
+
+def write_scenario(file_writer, config_id, orientation, body_centroid, num_steps, final_eps, expanded_states, plan_time, path_cost):
+    file_writer.writerow([
+        config_id,
+        orientation,
+        body_centroid,
+        num_steps,
+        final_eps,
+        expanded_states,
+        plan_time,
+        path_cost
+    ])
+
 def write_avg_planning_task(file_writer, config_id, avg_body, avg_steps, avg_final_eps, avg_states_expanded, avg_plan_time, avg_path_cost):
     ''' should write
     Configuration ID
