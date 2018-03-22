@@ -78,6 +78,7 @@ def write_avg_planning_task(file_writer, config_id, avg_body, avg_steps, avg_fin
     '''
     file_writer.writerow([
         'Configuration ID',
+        '',
         'Average Body Centroid Distance [m]',
         'Average # Steps',
         'Average Final Epsilon',
@@ -87,6 +88,7 @@ def write_avg_planning_task(file_writer, config_id, avg_body, avg_steps, avg_fin
     ])
     file_writer.writerow([
         config_id,
+        '',
         avg_body,
         avg_steps,
         avg_final_eps,
