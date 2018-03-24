@@ -1,0 +1,9 @@
+Scenario2
+Configuration ID,Run #,Body Centroid Distance [m],# Steps,Final Epsilon,# Expanded States,Planning Time [s],Path Cost
+Hornung_ A,0,0.0,0,1000000000.0,6509,60.007015228271484,0.0
+Hornung_ A,1,0.0,0,1000000000.0,5943,60.00591278076172,0.0
+Hornung_ A,2,0.0,0,1000000000.0,5288,60.003318786621094,0.0
+Hornung_ A,3,0.0,0,1000000000.0,4966,60.0107536315918,0.0
+Hornung_ A,4,0.0,0,1000000000.0,4646,60.01408004760742,0.0
+Configuration ID,,Average Body Centroid Distance [m],Average # Steps,Average Final Epsilon,Average # Expanded States,Average Planning Time [s],Average Path Cost
+Hornung_A,,0.0,0,0.0,0,0.0,0.0

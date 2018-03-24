@@ -1,0 +1,9 @@
+Scenario4
+Configuration ID,Run #,Body Centroid Distance [m],# Steps,Final Epsilon,# Expanded States,Planning Time [s],Path Cost
+ViGIR_ B,0,0.0,0,1000000000.0,2929,60.00889587402344,0.0
+ViGIR_ B,1,0.0,0,1000000000.0,2939,60.00172805786133,0.0
+ViGIR_ B,2,0.0,0,1000000000.0,2672,60.00778579711914,0.0
+ViGIR_ B,3,0.0,0,1000000000.0,2534,60.017295837402344,0.0
+ViGIR_ B,4,0.0,0,1000000000.0,2415,60.000022888183594,0.0
+Configuration ID,,Average Body Centroid Distance [m],Average # Steps,Average Final Epsilon,Average # Expanded States,Average Planning Time [s],Average Path Cost
+ViGIR_B,,0.0,0,0.0,0,0.0,0.0

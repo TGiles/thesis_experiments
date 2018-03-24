@@ -1,0 +1,9 @@
+Scenario3
+Configuration ID,Run #,Body Centroid Distance [m],# Steps,Final Epsilon,# Expanded States,Planning Time [s],Path Cost
+Custom_ A,0,0.0,0,1000000000.0,3980,60.013267517089844,0.0
+Custom_ A,1,0.0,0,1000000000.0,3799,60.00299835205078,0.0
+Custom_ A,2,0.0,0,1000000000.0,3522,60.00070571899414,0.0
+Custom_ A,3,0.0,0,1000000000.0,3298,60.001548767089844,0.0
+Custom_ A,4,0.0,0,1000000000.0,3280,60.01335525512695,0.0
+Configuration ID,,Average Body Centroid Distance [m],Average # Steps,Average Final Epsilon,Average # Expanded States,Average Planning Time [s],Average Path Cost
+Custom_A,,0.0,0,0.0,0,0.0,0.0
