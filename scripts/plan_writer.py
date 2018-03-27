@@ -94,6 +94,7 @@ def write_avg_planning_task(file_writer, config_id, avg_body, avg_steps, avg_fin
     ''' should write
     Configuration ID
     Average Body Centroid Distance [m]
+    <blank to line up headers>
     Average # Steps
     Average Final Epsilon
     Average # Expanded States
