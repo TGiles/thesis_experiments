@@ -30,7 +30,9 @@ def set_action_defaults(action_goal, setup_id=None, plugin_set_id=None, iteratio
     action_goal.goal.plan_request.start.right.header.frame_id = '/world'
     action_goal.goal.plan_request.goal.left.header.frame_id = '/world'
     action_goal.goal.plan_request.goal.right.header.frame_id = '/world'
+    # action_goal.goal.plan_request.parameter_set_name.data = "default"
     action_goal.goal.plan_request.parameter_set_name.data = "Nao"
+
 
     return action_goal
 
@@ -117,6 +119,180 @@ def set_action_goal_straights(action_goal, config_num, setup_id=None, plugin_set
 
         action_goal.goal.plan_request.goal.right.pose.position.x = -1.0
         action_goal.goal.plan_request.goal.right.pose.position.y = 0.05
+        action_goal.goal.plan_request.goal.right.pose.orientation.z = 1.0
+        action_goal.goal.plan_request.goal.right.pose.orientation.w = 0.0
+
+    if config_num == 5: # NE straight
+        action_goal.goal.plan_request.start.left.pose.position.x = -0.03535
+        action_goal.goal.plan_request.start.left.pose.position.y = 0.03535
+        action_goal.goal.plan_request.start.left.pose.orientation.z = 0.38268336
+        action_goal.goal.plan_request.start.left.pose.orientation.w = 0.92387956
+
+        action_goal.goal.plan_request.start.right.pose.position.x = 0.03535
+        action_goal.goal.plan_request.start.right.pose.position.y = -0.03535
+        action_goal.goal.plan_request.start.right.pose.orientation.z = 0.38268336
+        action_goal.goal.plan_request.start.right.pose.orientation.w = 0.92387956
+
+        action_goal.goal.plan_request.goal.left.pose.position.x = 0.707 - 0.03535
+        action_goal.goal.plan_request.goal.left.pose.position.y = 0.707 + 0.03535
+        action_goal.goal.plan_request.goal.left.pose.orientation.z = 0.38268336
+        action_goal.goal.plan_request.goal.left.pose.orientation.w = 0.92387956
+
+        action_goal.goal.plan_request.goal.right.pose.position.x = 0.707 + 0.03535
+        action_goal.goal.plan_request.goal.right.pose.position.y = 0.707 - 0.03535
+        action_goal.goal.plan_request.goal.right.pose.orientation.z = 0.38268336
+        action_goal.goal.plan_request.goal.right.pose.orientation.w = 0.92387956
+
+    if config_num == 6: # SE Straight
+        action_goal.goal.plan_request.start.left.pose.position.x = 0.03535
+        action_goal.goal.plan_request.start.left.pose.position.y = 0.03535
+        action_goal.goal.plan_request.start.left.pose.orientation.z = -0.38268336
+        action_goal.goal.plan_request.start.left.pose.orientation.w = 0.92387956
+
+        action_goal.goal.plan_request.start.right.pose.position.x = -0.03535
+        action_goal.goal.plan_request.start.right.pose.position.y = -0.03535
+        action_goal.goal.plan_request.start.right.pose.orientation.z = -0.38268336
+        action_goal.goal.plan_request.start.right.pose.orientation.w = 0.92387956
+
+        action_goal.goal.plan_request.goal.left.pose.position.x = 0.707 + 0.03535
+        action_goal.goal.plan_request.goal.left.pose.position.y = -0.707 + 0.03535
+        action_goal.goal.plan_request.goal.left.pose.orientation.z = -0.38268336
+        action_goal.goal.plan_request.goal.left.pose.orientation.w = 0.92387956
+
+        action_goal.goal.plan_request.goal.right.pose.position.x = 0.707 - 0.03535
+        action_goal.goal.plan_request.goal.right.pose.position.y = -0.707 - 0.03535
+        action_goal.goal.plan_request.goal.right.pose.orientation.z = -0.38268336
+        action_goal.goal.plan_request.goal.right.pose.orientation.w = 0.92387956
+
+    if config_num == 7: # SW Straight
+        action_goal.goal.plan_request.start.left.pose.position.x = 0.03535
+        action_goal.goal.plan_request.start.left.pose.position.y = -0.03535
+        action_goal.goal.plan_request.start.left.pose.orientation.z = -0.92387956
+        action_goal.goal.plan_request.start.left.pose.orientation.w = 0.38268336
+
+        action_goal.goal.plan_request.start.right.pose.position.x = -0.03535
+        action_goal.goal.plan_request.start.right.pose.position.y = 0.03535
+        action_goal.goal.plan_request.start.right.pose.orientation.z = -0.92387956
+        action_goal.goal.plan_request.start.right.pose.orientation.w = 0.38268336
+
+        action_goal.goal.plan_request.goal.left.pose.position.x = -0.707 + 0.03535
+        action_goal.goal.plan_request.goal.left.pose.position.y = -0.707 - 0.03535
+        action_goal.goal.plan_request.goal.left.pose.orientation.z = -0.92387956
+        action_goal.goal.plan_request.goal.left.pose.orientation.w = 0.38268336
+
+        action_goal.goal.plan_request.goal.right.pose.position.x = -0.707 - 0.03535
+        action_goal.goal.plan_request.goal.right.pose.position.y = -0.707 + 0.03535
+        action_goal.goal.plan_request.goal.right.pose.orientation.z = -0.92387956
+        action_goal.goal.plan_request.goal.right.pose.orientation.w = 0.38268336
+
+    if config_num == 8: # NW Straight
+        action_goal.goal.plan_request.start.left.pose.position.x = -0.03535
+        action_goal.goal.plan_request.start.left.pose.position.y = -0.03535
+        action_goal.goal.plan_request.start.left.pose.orientation.z = 0.92387956
+        action_goal.goal.plan_request.start.left.pose.orientation.w = 0.38268336
+
+        action_goal.goal.plan_request.start.right.pose.position.x = 0.03535
+        action_goal.goal.plan_request.start.right.pose.position.y = 0.03535
+        action_goal.goal.plan_request.start.right.pose.orientation.z = 0.92387956
+        action_goal.goal.plan_request.start.right.pose.orientation.w = 0.38268336
+
+        action_goal.goal.plan_request.goal.left.pose.position.x = -0.707 - 0.03535
+        action_goal.goal.plan_request.goal.left.pose.position.y = 0.707 - 0.03535
+        action_goal.goal.plan_request.goal.left.pose.orientation.z = 0.92387956
+        action_goal.goal.plan_request.goal.left.pose.orientation.w = 0.38268336
+
+        action_goal.goal.plan_request.goal.right.pose.position.x = -0.707 + 0.03535
+        action_goal.goal.plan_request.goal.right.pose.position.y = 0.707 + 0.03535
+        action_goal.goal.plan_request.goal.right.pose.orientation.z = 0.92387956
+        action_goal.goal.plan_request.goal.right.pose.orientation.w = 0.38268336
+    rospy.loginfo('action goal set')
+    return action_goal
+
+
+def set_action_goal_straights_thor(action_goal, config_num, setup_id=None, plugin_set_id=None, iteration=None):
+    # thor foot sep = 0.22
+    action_goal = set_action_defaults(action_goal, setup_id, plugin_set_id, iteration)
+    if config_num == 1: # straight up
+        action_goal.goal.plan_request.start.left.pose.position.x = -0.11
+        action_goal.goal.plan_request.start.left.pose.position.y = 0.0
+        action_goal.goal.plan_request.start.left.pose.orientation.z = 0.70710808
+        action_goal.goal.plan_request.start.left.pose.orientation.w = 0.70710548
+
+        action_goal.goal.plan_request.start.right.pose.position.x = 0.11
+        action_goal.goal.plan_request.start.right.pose.position.y = 0.0
+        action_goal.goal.plan_request.start.right.pose.orientation.z = 0.70710808
+        action_goal.goal.plan_request.start.right.pose.orientation.w = 0.70710548
+
+        action_goal.goal.plan_request.goal.left.pose.position.x = -0.11
+        action_goal.goal.plan_request.goal.left.pose.position.y = 1.0
+        action_goal.goal.plan_request.goal.left.pose.orientation.z = 0.70710808
+        action_goal.goal.plan_request.goal.left.pose.orientation.w = 0.70710548
+
+        action_goal.goal.plan_request.goal.right.pose.position.x = 0.11
+        action_goal.goal.plan_request.goal.right.pose.position.y = 1.0
+        action_goal.goal.plan_request.goal.right.pose.orientation.z = 0.70710808
+        action_goal.goal.plan_request.goal.right.pose.orientation.w = 0.70710548
+
+    if config_num == 2: # straight right
+        action_goal.goal.plan_request.start.left.pose.position.x = 0.0
+        action_goal.goal.plan_request.start.left.pose.position.y = 0.11
+        action_goal.goal.plan_request.start.left.pose.orientation.z = 0.0
+        action_goal.goal.plan_request.start.left.pose.orientation.w = 1.0
+
+        action_goal.goal.plan_request.start.right.pose.position.x = 0.0
+        action_goal.goal.plan_request.start.right.pose.position.y = -0.11
+        action_goal.goal.plan_request.start.right.pose.orientation.z = 0.0
+        action_goal.goal.plan_request.start.right.pose.orientation.w = 1.0
+
+        action_goal.goal.plan_request.goal.left.pose.position.x = 1.0
+        action_goal.goal.plan_request.goal.left.pose.position.y = 0.11
+        action_goal.goal.plan_request.goal.left.pose.orientation.z = 0.0
+        action_goal.goal.plan_request.goal.left.pose.orientation.w = 1.0
+
+        action_goal.goal.plan_request.goal.right.pose.position.x = 1.0
+        action_goal.goal.plan_request.goal.right.pose.position.y = -0.11
+        action_goal.goal.plan_request.goal.right.pose.orientation.z = 0.0
+        action_goal.goal.plan_request.goal.right.pose.orientation.w = 1.0
+
+    if config_num == 3: # straight down
+        action_goal.goal.plan_request.start.left.pose.position.x = 0.11
+        action_goal.goal.plan_request.start.left.pose.position.y = 0.0
+        action_goal.goal.plan_request.start.left.pose.orientation.z = -0.70710808
+        action_goal.goal.plan_request.start.left.pose.orientation.w = 0.70710548
+
+        action_goal.goal.plan_request.start.right.pose.position.x = -0.11
+        action_goal.goal.plan_request.start.right.pose.position.y = 0.0
+        action_goal.goal.plan_request.start.right.pose.orientation.z = -0.70710808
+        action_goal.goal.plan_request.start.right.pose.orientation.w = 0.70710548
+
+        action_goal.goal.plan_request.goal.left.pose.position.x = 0.11
+        action_goal.goal.plan_request.goal.left.pose.position.y = -1.0
+        action_goal.goal.plan_request.goal.left.pose.orientation.z = -0.70710808
+        action_goal.goal.plan_request.goal.left.pose.orientation.w = 0.70710548
+
+        action_goal.goal.plan_request.goal.right.pose.position.x = -0.11
+        action_goal.goal.plan_request.goal.right.pose.position.y = -1.0
+        action_goal.goal.plan_request.goal.right.pose.orientation.z = -0.70710808
+        action_goal.goal.plan_request.goal.right.pose.orientation.w = 0.70710548
+
+    if config_num == 4: # straight left
+        action_goal.goal.plan_request.start.left.pose.position.x = 0.0
+        action_goal.goal.plan_request.start.left.pose.position.y = -0.11
+        action_goal.goal.plan_request.start.left.pose.orientation.z = 1.0
+        action_goal.goal.plan_request.start.left.pose.orientation.w = 0.0
+
+        action_goal.goal.plan_request.start.right.pose.position.x = 0.0
+        action_goal.goal.plan_request.start.right.pose.position.y = 0.11
+        action_goal.goal.plan_request.start.right.pose.orientation.z = 1.0
+        action_goal.goal.plan_request.start.right.pose.orientation.w = 0.0
+
+        action_goal.goal.plan_request.goal.left.pose.position.x = -1.0
+        action_goal.goal.plan_request.goal.left.pose.position.y = -0.11
+        action_goal.goal.plan_request.goal.left.pose.orientation.z = 1.0
+        action_goal.goal.plan_request.goal.left.pose.orientation.w = 0.0
+
+        action_goal.goal.plan_request.goal.right.pose.position.x = -1.0
+        action_goal.goal.plan_request.goal.right.pose.position.y = 0.11
         action_goal.goal.plan_request.goal.right.pose.orientation.z = 1.0
         action_goal.goal.plan_request.goal.right.pose.orientation.w = 0.0
 
