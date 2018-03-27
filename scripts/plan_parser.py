@@ -170,15 +170,15 @@ def plan_parser(setup_id, plugin_set):
     rate = rospy.Rate(0.5)
     current_config = 1
     iteration = 0
-    file_obj = open(current_setup + '/AllStraightDirections.csv', 'w+' )
-    file_writer = csv.writer(file_obj, delimiter=',')
-    write_scenario_header(file_writer)
+    # file_obj = open(current_setup + '/AllStraightDirections.csv', 'w+' )
+    # file_writer = csv.writer(file_obj, delimiter=',')
+    # write_scenario_header(file_writer)
     # write_header(file_writer)
 
-    # file_obj = open(current_setup + '/Scenario' + str(current_config) + '.csv', 'w+')
-    # file_writer = csv.writer(file_obj, delimiter=',')
-    # write_header(file_writer, 'Scenario '+ str(current_config))
-    # write_run_header(file_writer)
+    file_obj = open(current_setup + '/Scenario' + str(current_config) + '.csv', 'w+')
+    file_writer = csv.writer(file_obj, delimiter=',')
+    write_header(file_writer, 'Scenario '+ str(current_config))
+    write_run_header(file_writer)
 
     # plan_publisher(pub, current_config)
     # rospy.spin()
@@ -191,21 +191,21 @@ def plan_parser(setup_id, plugin_set):
                 rospy.signal_shutdown('End of testing')
                 return
             # rospy.signal_shutdown('End of testing')
-            if iteration == 1:
-                # avg_results = calc_avgs(run_result)
-                # write_avg_planning_task(file_writer, str(setup_id + plugin_set), 
-                # avg_results[0], avg_results[1], avg_results[2], avg_results[3], avg_results[4], avg_results[5])
+            if iteration == 5:
+                avg_results = calc_avgs(run_result)
+                write_avg_planning_task(file_writer, str(setup_id + plugin_set), 
+                avg_results[0], avg_results[1], avg_results[2], avg_results[3], avg_results[4], avg_results[5])
 
-                # run_result = []
+                run_result = []
                 current_config += 1
 
                 # rospy.signal_shutdown('Auto Manual end of testing')
                 # return
 
-                # file_obj = open(current_setup + '/Scenario' + str(current_config)+ '.csv', 'w+')
-                # file_writer = csv.writer(file_obj, delimiter=',')
-                # write_header(file_writer, 'Scenario' + str(current_config))
-                # write_run_header(file_writer)
+                file_obj = open(current_setup + '/Scenario' + str(current_config)+ '.csv', 'w+')
+                file_writer = csv.writer(file_obj, delimiter=',')
+                write_header(file_writer, 'Scenario' + str(current_config))
+                write_run_header(file_writer)
                 iteration = 0
             else:
                 plan_publisher(pub, current_config, setup_id, plugin_set, iteration)
